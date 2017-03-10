@@ -1,0 +1,17 @@
+.reviews {
+  .reviews__author-name {
+    font-family: $font-family;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+  }
+  .reviews__author-post {
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #283645;
+  }
+}

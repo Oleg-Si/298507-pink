@@ -1,0 +1,16 @@
+.button {
+  font-family: $font-family;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  &--post {
+    color: $color-red;
+  }
+  &--cancel {
+    color: $color-dark-blue;
+    opacity: 0.1;
+  }
+}
+
