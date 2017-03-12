@@ -1,0 +1,24 @@
+.page-footer {
+  b {
+    @include font-bold;
+    font-size: 18px;
+    color: #000000;
+  }
+  a {
+    @include font-light;
+    font-size: 24px;
+    color: $font-secondary-color;
+    text-decoration: none;
+  }
+  span {
+    @include font-light;
+    font-size: 24px;
+    color: $font-secondary-color;
+  }
+}
+.page-footer__title {
+    @include font-light;
+    font-size: 24px;
+    line-height: 29px;
+    color: $font-main-color;
+  }

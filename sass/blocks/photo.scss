@@ -1,0 +1,29 @@
+.photo__description {
+  background-color: #f2f2f2
+}
+.photo__user-name {
+  @include font-bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: $font-main-color;
+}
+.photo__publication-time {
+  @include font-light;
+  font-size: 12px;
+  line-height: 24px;
+  color: $font-main-color;
+  text-transform: uppercase;
+}
+.photo__user-post {
+  @include font-normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $font-main-color;
+}
+.photo__like {
+  @include font-normal;
+  font-size: 12px;
+  line-height: 24px;
+  color: $font-secondary-color;
+  text-transform: uppercase;
+}

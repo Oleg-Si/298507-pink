@@ -1,0 +1,13 @@
+.reviews__author-name {
+  @include font-bold;
+  font-size: 18px;
+  line-height: 30px;
+  font-style: normal;
+  color: #000000;
+}
+.reviews__author-post {
+  @include font-normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $font-main-color;
+}

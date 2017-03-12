@@ -1,0 +1,8 @@
+.description {
+  p {
+    @include font-light;
+    font-size: 14px;
+    line-height: 30px;
+    color: $font-main-color;
+  }
+}

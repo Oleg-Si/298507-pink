@@ -1,0 +1,8 @@
+.copyright {
+  p {
+    @include font-normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: $font-main-color;
+  }
+}

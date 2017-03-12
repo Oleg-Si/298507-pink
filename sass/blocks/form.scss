@@ -1,0 +1,27 @@
+
+.form__item {
+  @include font-normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $font-secondary-color;
+  text-transform: uppercase;
+}
+.form__item-bg {
+  background-color:  #f2f2f2;
+}
+.form__title {
+  @include font-normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $font-secondary-color;
+  text-transform: uppercase;
+}
+textarea {
+  color: #000000;
+}
+.form__item-bg label {
+  @include font-normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: $font-main-color;
+}

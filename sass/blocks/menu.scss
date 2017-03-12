@@ -1,0 +1,15 @@
+.menu {
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+.menu__list {
+  @include reset-ul;
+}
+.menu__item {
+  @include font-bold;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
