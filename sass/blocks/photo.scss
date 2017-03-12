@@ -1,35 +1,29 @@
-.photo {
-  .photo__description {
-    background-color: #f2f2f2
-  }
-  .photo__user-name {
-    font-family: $font-family;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: bold;
-    color: $color-dark-blue;
-  }
-  .photo__publication-time{
-    font-family: $font-family;
-    font-size: 12px;
-    line-height: 24px;
-    font-weight: lighter;
-    color: $color-dark-blue;
-    text-transform: uppercase;
-  }
-  .photo__user-post {
-    font-family: $font-family;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: normal;
-    color: $color-dark-blue;
-  }
-  .photo__like {
-    font-family: $font-family;
-    font-size: 12px;
-    line-height: 24px;
-    font-weight: normal;
-    color: $color-red;
-    text-transform: uppercase;
-  }
+.photo__description {
+  background-color: #f2f2f2
+}
+.photo__user-name {
+  @include font-bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: $font-main-color;
+}
+.photo__publication-time {
+  @include font-light;
+  font-size: 12px;
+  line-height: 24px;
+  color: $font-main-color;
+  text-transform: uppercase;
+}
+.photo__user-post {
+  @include font-normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $font-main-color;
+}
+.photo__like {
+  @include font-normal;
+  font-size: 12px;
+  line-height: 24px;
+  color: $font-secondary-color;
+  text-transform: uppercase;
 }

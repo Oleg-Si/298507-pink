@@ -1,15 +1,14 @@
 .button {
-  font-family: $font-family;
+  @include font-bold;
   font-size: 18px;
   line-height: 18px;
-  font-weight: bold;
   color: #ffffff;
   text-decoration: none;
   &--post {
-    color: $color-red;
+    color: font-main-color;
   }
   &--cancel {
-    color: $color-dark-blue;
+    color: font-secondary-color;
     opacity: 0.1;
   }
 }

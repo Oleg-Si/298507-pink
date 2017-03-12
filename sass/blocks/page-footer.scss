@@ -1,28 +1,24 @@
 .page-footer {
-  .page-footer__title {
-    font-family: $font-family;
-    font-size: 24px;
-    line-height: 29px;
-    font-weight: lighter;
-    color: $color-dark-blue;
-  }
   b {
-    font-family: $font-family;
+    @include font-bold;
     font-size: 18px;
-    font-weight: bold;
     color: #000000;
   }
   a {
-    font-family: $font-family;
+    @include font-light;
     font-size: 24px;
-    font-weight: lighter;
-    color: $color-red;
+    color: $font-secondary-color;
     text-decoration: none;
   }
   span {
-    font-family: $font-family;
+    @include font-light;
     font-size: 24px;
-    font-weight: lighter;
-    color: $color-red;
+    color: $font-secondary-color;
   }
 }
+.page-footer__title {
+    @include font-light;
+    font-size: 24px;
+    line-height: 29px;
+    color: $font-main-color;
+  }

@@ -1,9 +1,8 @@
 .copyright {
   p {
-    font-family: $font-family;
+    @include font-normal;
     font-size: 14px;
     line-height: 18px;
-    font-weight: normal;
-    color: $color-dark-blue;
+    color: $font-main-color;
   }
 }

@@ -1,10 +1,7 @@
-.price-list {
-  .price-list__item {
-    font-family: $font-family;
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: lighter;
-    color: #283645;
-    text-transform: uppercase;
-  }
+.price-list__item {
+  @include font-light;
+  font-size: 14px;
+  line-height: 30px;
+  color: $font-main-color;
+  text-transform: uppercase;
 }

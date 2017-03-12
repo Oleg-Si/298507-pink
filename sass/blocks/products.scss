@@ -1,21 +1,17 @@
-.products {
-  .products__price {
-    background-color: #283645
-  }
-  .products__price-title {
-    font-family: $font-family;
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: bold;
-    color: #ffffff;
-    text-transform: uppercase;
-  }
-  .products__price-item {
-    font-family: $font-family;
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: lighter;
-    color: #ffffff;
-    text-transform: uppercase;
-  }
+.products__price {
+  background-color: #283645;
+}
+.products__price-title {
+  @include font-bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.products__price-item {
+  @include font-light;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
 }
