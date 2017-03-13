@@ -1,0 +1,10 @@
+.burger {
+  width: 70px;
+  background-color: transparent;
+  margin-left: auto;
+}
+@media ($desktop-width) {
+  .burger {
+    display: none;
+  }
+}

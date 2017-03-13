@@ -15,3 +15,28 @@
   color: #ffffff;
   text-transform: uppercase;
 }
+.products__item {
+  text-align: center;
+  &--description {
+    display: none;
+  }
+}
+.products__item:nth-child(n+3) {
+  display: none;
+}
+@media ($tablet-width) {
+  .products__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .products__item {
+    width: 150px;
+    &--description {
+    display: block;
+    margin-top: auto;
+    }
+  }
+  .products__item:nth-child(n+2) {
+  display: block;
+  }
+}

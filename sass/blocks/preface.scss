@@ -1,6 +1,24 @@
 .preface {
   @include font-light;
+  text-align: center;
   font-size: 24px;
   line-height: 24px;
   color: $font-main-color;
+  @include container;
+  width: 100%;
+}
+@media ($tablet-width) {
+  .preface {
+    font-size: 40px;
+    line-height: 49px;
+    p {
+      margin-bottom: 10px;
+    }
+    p:last-child {
+      display: block;
+      width: 500px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+  }
 }

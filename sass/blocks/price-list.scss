@@ -4,4 +4,16 @@
   line-height: 30px;
   color: $font-main-color;
   text-transform: uppercase;
+  display: block;
+  height: 45px;
+  border: 1px solid #000000;
+  margin: 0;
+}
+@media ($tablet-width) {
+  .price-list__item {
+    font-size: 0;
+    &--description {
+      font-size: 14px;
+    }
+  }
 }

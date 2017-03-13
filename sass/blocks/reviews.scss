@@ -1,3 +1,8 @@
+.reviews {
+  @include container;
+  padding: 0 20px;
+  width: 100%;
+}
 .reviews__author-name {
   @include font-bold;
   font-size: 18px;
@@ -5,9 +10,39 @@
   font-style: normal;
   color: #000000;
 }
+.reviews__author-info {
+  @include font-normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $font-main-color;
+  display: none;
+}
 .reviews__author-post {
   @include font-normal;
   font-size: 14px;
   line-height: 30px;
   color: $font-main-color;
+}
+.reviews__item {
+  text-align: center;
+  margin: 0;
+}
+.reviews__item:nth-child(n+2) {
+  display: none;
+}
+@media ($tablet-width) {
+  .reviews__author-name {
+    width: 100%;
+  }
+  .reviews__author-info {
+    display: block;
+    width: 100%;
+  }
+  .reviews__author-post {
+    order: -1;
+  }
+  .reviews__item {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

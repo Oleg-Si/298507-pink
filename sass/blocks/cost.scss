@@ -1,3 +1,9 @@
 .cost {
   background-color: #f2f2f2;
+  width: 100%;
+  padding: 0 20px;
+}
+.cost__wrapper {
+  @include container;
+  width: 100%;
 }

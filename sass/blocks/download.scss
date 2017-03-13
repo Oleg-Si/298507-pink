@@ -1,9 +1,50 @@
 .download {
   background-color: #1d2631;
+  padding: 20px;
+  h2 {
+    display: none;
+    @include font-light;
+    font-size: 40px;
+    line-height: 49px;
+    color: #ffffff;
+    margin: 0;
+  }
+}
+.download__wrapper {
+  @include container;
+  width: 100%;
 }
 .download__title {
     @include font-light;
     font-size: 14px;
     line-height: 24px;
     color: #ffffff;
+}
+@media ($tablet-width) {
+  .download {
+    width: 300px;
+    margin-top: -350px;
+    margin-left: 30px;
+    margin-bottom: 80px;
+    background-color: transparent;
+    h2 {
+      display: block;
+      width: 180px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+  .download__wrapper {
+    display: block;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .download__link {
+    width: 300px;
+  }
+  .download__title {
+    width: 280px;
+  }
 }

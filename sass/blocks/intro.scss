@@ -1,8 +1,7 @@
 .intro {
-  height: 462px;
-  background: url("../../img/bg-back-mobile@1x.jpg") no-repeat center;
+
   &--hand {
-    background:
+    background: #283645
       url("../../img/iphone-hand-mobile@1x.png") no-repeat center bottom,
       url("../../img/bg-back-mobile@1x.jpg") no-repeat center;
   }
@@ -13,4 +12,11 @@
   line-height: 29px;
   color: #ffffff;
   margin: 0;
+}
+.intro__wrapper{
+  @include container;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }

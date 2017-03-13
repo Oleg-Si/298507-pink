@@ -5,10 +5,10 @@
   color: #ffffff;
   text-decoration: none;
   &--post {
-    color: font-main-color;
+    color: $font-main-color;
   }
   &--cancel {
-    color: font-secondary-color;
+    color: $font-secondary-color;
     opacity: 0.1;
   }
 }
