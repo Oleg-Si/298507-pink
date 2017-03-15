@@ -1,7 +1,6 @@
-.reviews {
+.reviews__wrapper {
   @include container;
-  padding: 0 20px;
-  width: 100%;
+  padding: 20px;
 }
 .reviews__author-name {
   @include font-bold;

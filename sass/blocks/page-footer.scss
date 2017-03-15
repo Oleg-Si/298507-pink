@@ -1,5 +1,4 @@
 .page-footer {
-  width: 100%;
   b {
     @include font-bold;
     font-size: 18px;
@@ -21,11 +20,11 @@
 .page-footer__wrapper {
   @include container;
   padding: 0 20px;
-  width: 100%;
   text-align: center;
-  &--hidden {
-    display: none;
-  }
+}
+.page-footer__copyright {
+  @include container;
+  display: none;
 }
 .page-footer__title {
     @include font-light;
@@ -41,18 +40,18 @@
     width: 500px;
     margin: 0 auto;
   }
-  .page-footer__wrapper {
-    &--hidden {
-    @include container;
+  .page-footer__copyright {
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
     text-align: center;
     }
-  }
 }
 @media ($desktop-width) {
   .contacts__item:nth-of-type(2) {
     order: 1;
+  }
+  .page-footer__copyright {
+    padding: 0 10px;
   }
 }

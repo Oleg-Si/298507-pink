@@ -1,3 +1,8 @@
 .maps {
+  @include container;
+  height: 400px;
+  background: url("/img/bg-map-mobile@1x.png") no-repeat center;
+}
+iframe {
   border: none;
 }

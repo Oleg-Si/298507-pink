@@ -1,26 +1,16 @@
 .page-header {
-  background: url("/img/bg-back-mobile@1x.jpg") no-repeat 50% -30px;
-  background-color: #283645;
-  min-height: 415px;
-}
-.page-header--hand {
-  background:
-    url("/img/iphone-hand-mobile@1x.png") no-repeat 50% bottom,
-    url("/img/bg-back-mobile@1x.jpg") no-repeat 50% bottom;
   background-color: #283645;
 }
 .page-header__wrapper {
   @include container;
-  height: 100%;
-  width: 100%;
 }
-@media ($tablet-width) {
-  .page-header__wrapper {
-    width: 100%;
-  }
-}
-@media ($desktop-width) {
-  .page-header__wrapper {
-    @include container;
+.page-header__intro {
+  min-height: 462px;
+
+  background: #283645 url("../../img/bg-back-mobile@1x.jpg") no-repeat center;
+  &--hand {
+    background: #283645
+      url("../../img/iphone-hand-mobile@1x.png") no-repeat center bottom,
+      url("../../img/bg-back-mobile@1x.jpg") no-repeat center;
   }
 }

@@ -1,9 +1,20 @@
 .features {
   background-color: #f2f2f2;
+}
+.features__wrapper {
   @include container;
-  padding: 0 20px;
-  width: 100%;
-  height: auto;
+  position: relative;
+  min-height: 750px;
+  padding: 20px;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    width: 180px;
+    height: 290px;
+    background: url("/img/iphone-screen-mobile@1x.png") no-repeat 10px 10px;
+  }
 }
 .features__item {
   text-align: center;
@@ -23,15 +34,15 @@
   color: $font-main-color;
 }
 @media ($tablet-width) {
-  .features {
-    width: 100%;
-    padding-left: 330px;
+  .features__wrapper {
+    padding-left: 300px;
     position: relative;
+    min-height: auto;
   }
   .features__item {
     text-align: left;
   }
-  .features__item:nth-of-type(1)::before {
+  .features__wrapper::before {
     content: "";
     position: absolute;
     left: 50px;
@@ -42,12 +53,15 @@
   }
 }
 @media ($desktop-width) {
-  .features {
+  .features__wrapper {
     display: flex;
-    padding: 0;
-    padding-top: 200px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10px;
+    padding-top: 300px;
   }
-  .features__item:nth-of-type(1)::before {
-    display: none;
+  .features__item {
+    width: 260px;
+    text-align: center;
   }
 }

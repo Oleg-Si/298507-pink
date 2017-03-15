@@ -1,0 +1,12 @@
+.slider {
+  min-width: 840px;
+  display: flex;
+  justify-content: center;
+  transform: translateX(-280px);
+}
+@media ($tablet-width) {
+  .slider{
+    transform: none;
+    min-width: auto;
+  }
+}
