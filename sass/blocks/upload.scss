@@ -1,3 +1,81 @@
 .upload {
   background-color: #f2f2f2;
 }
+.upload__wrapper {
+  @include container;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.upload__photo {
+  display: block;
+  margin: 0 auto;
+}
+.upload__tool {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+.upload__tools {
+  width: 320px;
+  @include clearfix;
+  margin-bottom: 50px;
+}
+.upload__size {
+  width: 200px;
+  height: 2px;
+  background-color: red;
+}
+.upload__size {
+  display: none;
+}
+.upload__tools-wrapper {
+  @include clearfix;
+  margin-bottom: 80px;
+}
+.upload__tools-item {
+  position: relative;
+  @include clearfix;
+  float: left;
+}
+.upload__tools-item--active {
+    .upload__size {
+      display: block;
+      position: absolute;
+      top: 80px;
+      left: 0;
+    }
+}
+@media ($tablet-width) {
+  .upload__tool {
+    float: left;
+  }
+  .upload__tools {
+    margin: 0;
+  }
+  .upload__size {
+    display: block;
+    float: left;
+    margin-top: 25px;
+  }
+  .upload__tools-item {
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .upload__tools-item--active {
+    .upload__size {
+      display: block;
+      position: static;
+    }
+  }
+  .upload__tools-wrapper {
+    margin-bottom: 30px;
+  }
+}
+@media ($desktop-width) {
+  .upload__tools {
+    width: 420px;
+  }
+}

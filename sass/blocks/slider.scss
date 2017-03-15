@@ -13,4 +13,11 @@
     transform: none;
     min-width: auto;
   }
+  .cost__item {
+    margin: 0;
+    float: left;
+    &--description {
+      margin-top: 95px;
+    }
+  }
 }
