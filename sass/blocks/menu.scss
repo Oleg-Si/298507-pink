@@ -12,6 +12,7 @@
       display: none;
     }
     .menu__header {
+      @include clearfix;
       background-color: rgba(0, 0, 0, 0.3);
       border: none;
       position: absolute;
@@ -28,8 +29,8 @@
   height: 463px;
 }
 .menu__header {
-  display: flex;
-  align-items: center;
+  @include clearfix;
+  display: block;
   background-color: #283645;
   padding: 0 20px;
   min-height: 70px;
