@@ -8,106 +8,117 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="menu">
-        <a class="logo" href="index.html">
-          <div class="logo__img">Pink</div>
-        </a>
-        <button class="burger  burger--open" type="button">
-          <span class="visually-hidden">Открыть/Закрыть</span>
-        </button>
-        <ul class="menu__list  is-hidden">
-          <li class="menu__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="menu__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="menu__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="menu__item">
-            <a href="https://htmlacademy.ru/">Html academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__wrapper">
+        <nav class="menu  menu--closed">
+          <div class="menu__header">
+            <a class="logo">
+              <div class="logo__img">Pink</div>
+            </a>
+            <button class="burger  burger--closed" type="button">
+              <span class="visually-hidden">Открыть/Закрыть</span>
+            </button>
+          </div>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="menu__item">
+              <a>Конкурс</a>
+            </li>
+            <li class="menu__item">
+              <a href="https://htmlacademy.ru/">HTML academy</a>
+            </li>
+          </ul>
+          <p class="menu__title">Конкурс на самое безбашенное путешествие с Пинк</p>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
-      <div class="intro  intro--page-form">
-        <p class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</p>
-      </div>
       <div class="description  description--form">
         <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       </div>
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="form__item">
-          Фамилия:
-          <input type="text" name="surname" placeholder="Укажите фамилию*" required>
-        </label>
-        <label class="form__item">
-          Имя:
-          <input type="text" name="name" placeholder="Введите ваше имя*" required>
-        </label>
-        <label class="form__item">
-          Отчество:
-          <input type="text" name="patronymic" placeholder="Ну и отчество тоже">
-        </label>
-        <div class="form__item-bg">
-          <p class="form__title">Ваши безбашенные достижения в путешествии</p>
-          <label>
-            <input type="checkbox" name="shark-selfie" checked>
-            Сделал селфи с акулой
-          </label>
-          <label>
-            <input type="checkbox" name="beach" checked>
-            Обгорел на пляже
-          </label>
-          <label>
-            <input type="checkbox" name="Norris">
-            Видел Чака Норриса
-          </label>
-          <label>
-            <input type="checkbox" name="souvenir">
-            Накупил сувениров
-          </label>
-          <label>
-            <input type="checkbox" name="tower" checked>
-            Удержал башню
-          </label>
-          <label>
-            <input type="checkbox" name="hotel">
-            Разгромил отель
-          </label>
+        <div class="form__wrapper">
+          <div class="form__block-name">
+            <label class="form__label-text" for="surname">Фамилия:</label>
+            <input class="form__text-input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+            <label class="form__label-text" for="name">Имя:</label>
+            <input class="form__text-input" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+            <label class="form__label-text" for="patronymic">Отчество:</label>
+            <input class="form__text-input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+          </div>
+          <div class="form__block-features">
+            <p class="form__title">Ваши безбашенные достижения в путешествии</p>
+            <div class="form__item">
+              <input type="checkbox" name="shark-selfie" id="shark-selfie" checked>
+              <label for="shark-selfie">Сделал селфи с акулой</label>
+            </div>
+            <div class="form__item">
+              <input type="checkbox" name="beach" id="beach" checked>
+              <label for="beach">Обгорел на пляже</label>
+            </div>
+            <div class="form__item">
+              <input type="checkbox" name="Norris" id="Norris">
+              <label for="Norris">Видел Чака Норриса</label>
+            </div>
+            <div class="form__item">
+              <input type="checkbox" name="souvenir" id="souvenir">
+              <label for="souvenir">Накупил сувениров</label>
+            </div>
+            <div class="form__item">
+              <input type="checkbox" name="tower" id="tower" checked>
+              <label for="tower">Удержал башню</label>
+            </div>
+            <div class="form__item">
+              <input type="checkbox" name="hotel" id="hotel">
+              <label for="hotel">Разгромил отель</label>
+            </div>
+          </div>
+          <div class="form__block-contacts">
+            <p class="form__title  form__title--hidden">Контактная информация</p>
+            <label class="form__label-text" for="phone">Номер телефона</label>
+            <input class="form__text-input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
+            <label class="form__label-text" for="mail">Адрес почты</label>
+            <input class="form__text-input" type="email" name="mail" id="mail" placeholder="Введите почту*" required>
+          </div>
+          <div class="form__block-platform">
+            <p class="form__title">С каким приложением путешествовали?</p>
+            <div class="form__item">
+              <input type="radio" name="platform" id="platform-ios" value="iOS" checked>
+              <label for="platform-ios">Pink для iOS</label>
+            </div>
+            <div class="form__item">
+              <input type="radio" name="platform" id="platform-android" value="Android">
+              <label for="platform-android">Pink на Android</label>
+            </div>
+            <div class="form__item">
+              <input type="radio" name="platform" id="platform-windows" value="Windows Phone">
+              <label for="platform-windows">Windows Phone</label>
+            </div>
+          </div>
+          <div class="form__block-description">
+            <p class="form__title">Опишите свои эмоции</p>
+            <textarea cols="30" rows="10" name="description">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </div>
+          <div class="form__send">
+            <input type="submit" value="Отправить форму">
+            <p class="form__required">* &ndash; обязательные поля</p>
+          </div>
         </div>
-        <label class="form__item">
-          Номер телефона
-          <input type="tel" name="phone" placeholder="Номер, пожалуйста">
-        </label>
-        <label class="form__item">
-          Адрес почты
-          <input type="email" name="mail" placeholder="Введите почту*" required>
-        </label>
-        <div class="form__item-bg">
-          <p class="form__title">С каким приложением путешествовали?</p>
-          <label>
-            <input type="radio" name="platform" value="iOS" checked>
-            Pink для iOS
-          </label>
-          <label>
-            <input type="radio" name="platform" value="Android">
-            Pink на Android
-          </label>
-          <label>
-            <input type="radio" name="platform" value="Windows Phone">
-            Windows Phone
-          </label>
-        </div>
-        <label class="form__item">
-          Опишите свои эмоции
-          <textarea cols="30" rows="10" name="description">Можно прям в красках, не стесняясь в выражениях</textarea>
-        </label>
-        <input type="submit" value="Отправить форму">
-        <p class="form__required">* &ndash; обязательные поля</p>
       </form>
+      <section class="popup  popup--successful">
+        <h2>Что-то пошло не так!</h2>
+        <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="popup__button" type="button">Ок</button>
+      </section>
+      <section class="popup  popup--failed">
+        <h2>Ваша заявка отправлена</h2>
+        <p>Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+        <button class="popup__button" type="button">Закрыть окно</button>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
@@ -115,9 +126,9 @@
           <div class="logo__img">Pink</div>
         </a>
         <div class="social">
-          <a class="social__link  social__link--twitter" href="https://twitter.com/">Твиттер</a>
-          <a class="social__link  social__link--facebook" href="https://www.facebook.com/">Фейсбук</a>
-          <a class="social__link  social__link--youtube" href="https://www.youtube.com/">Ютуб</a>
+          <a class="social__link  social__link--twitter" href="https://twitter.com/"><span class="visually-hidden">Твиттер</span></a>
+          <a class="social__link  social__link--facebook" href="https://www.facebook.com/"><span class="visually-hidden">Фейсбук</span></a>
+          <a class="social__link  social__link--youtube" href="https://www.youtube.com/"><span class="visually-hidden">Ютуб</span></a>
         </div>
         <div class="copyright">
           <p>Разработано</p>
@@ -125,5 +136,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

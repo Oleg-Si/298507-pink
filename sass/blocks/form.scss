@@ -1,27 +1,113 @@
-
-.form__item {
+.form__wrapper {
+  @include container;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+.form__block-name {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.form__label-text {
   @include font-normal;
   font-size: 14px;
   line-height: 30px;
   color: $font-secondary-color;
   text-transform: uppercase;
+  }
+.form__text-input {
+  min-height: 60px;
 }
-.form__item-bg {
-  background-color:  #f2f2f2;
+.form__block-platform,
+.form__block-features {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+.form__block-contacts {
+  display: flex;
+  flex-direction: column;
+}
+.form__item {
+  @include font-normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: $font-main-color;
+
 }
 .form__title {
   @include font-normal;
   font-size: 14px;
   line-height: 18px;
+  text-align: center;
   color: $font-secondary-color;
   text-transform: uppercase;
 }
 textarea {
   color: #000000;
 }
-.form__item-bg label {
-  @include font-normal;
-  font-size: 18px;
-  line-height: 30px;
-  color: $font-main-color;
+@media ($tablet-width) {
+  .form__block-name {
+    flex-grow: 1;
+    order: -4;
+  }
+  .form__block-features {
+    order: -1;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+  }
+  .form__block-platform {
+    order: -3;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+  }
+  .form__block-contacts {
+    order: -2;
+    border: 1px solid #000000;
+  }
+  .form__block-description {
+    border: 1px solid #000000;
+  }
+  .form__send {
+    display: flex;
+  }
+  .form__required {
+    margin-left: auto;
+  }
+}
+@media ($desktop-width) {
+  .form__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .form__block-name {
+    flex-grow: 0;
+    width: 450px;
+  }
+  .form__block-platform {
+    width: 450px;
+  }
+  .form__block-contacts {
+    width: 940px;
+    display: flex;
+    flex-direction: row;
+    min-height: 150px;
+  }
+  .form__block-features {
+    width: 940px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 150px;
+  }
+  .form__block-description {
+    width: 940px;
+  }
+  .form__send {
+    width: 940px;
+  }
+  .form__required {
+    margin-left: auto;
+  }
 }
