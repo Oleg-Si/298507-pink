@@ -1,6 +1,8 @@
 .page-header {
   background-color: #283645;
+  background: #283645 url("../../img/bg-back-mobile@1x.jpg") no-repeat center bottom;
 }
+
 .page-header__wrapper {
   @include container;
 }

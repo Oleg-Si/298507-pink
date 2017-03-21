@@ -76,9 +76,8 @@
     /*min-height: 853px;*/
     &--closed {
       .menu__header {
-        float: left;
         position: static;
-        width: 160px;
+        width: 100%;
         min-height: 110px;
       }
       .menu__list {
@@ -86,15 +85,15 @@
         float: left;
         width: 800px;
         min-height: 110px;
+        margin-top: -110px;
       }
     }
   }
   .menu__header {
     background-color: rgba(0, 0, 0, 0.3);
-    float: left;
     min-height: 0px;
     border: none;
-    width: 160px;
+    width: 100%;
     padding: 0 0 0 10px;
     min-height: 110px;
   }
@@ -105,6 +104,7 @@
     padding-right: 10px;
     padding-left: 160px;
     padding-top: 47px;
+    background-color: transparent;
   }
   .menu__item {
     display: inline-block;
