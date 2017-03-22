@@ -1,3 +1,102 @@
 .upload {
   background-color: #f2f2f2;
 }
+.upload__wrapper {
+  @include container;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.upload__size{
+  display: none;
+  width: 245px;
+  height: 2px;
+  background-color: #000000;
+}
+.upload__tools-item {
+  float: left;
+  margin-right: 40px;
+  margin-top: 20px;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:first-child {
+    margin-left: 40px;
+  }
+}
+.upload__tools-wrapper {
+  @include clearfix;
+  margin-bottom: 100px;
+}
+.upload__tool {
+  width: 40px;
+  height: 40px;
+}
+.upload__slide {
+  width: 15px;
+  height: 15px;
+  border: 2px solid $font-secondary-color;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  position: absolute;
+  top: -6px;
+  left: 150px;
+}
+.upload__tools {
+  display: flex;
+  flex-wrap: wrap;
+}
+.upload__tools-item--active {
+  position: relative;
+  .upload__size {
+    display: block;
+    position: absolute;
+    bottom: -50px;
+    left: -20px;
+  }
+}
+@media ($tablet-width) {
+  .upload__tools {
+    width: 300px;
+    margin-left: 40px;
+  }
+  .upload__tools-wrapper {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  .upload__size {
+    display: block;
+    position: static;
+    width: 200px;
+    float: right;
+    margin-top: 20px;
+  }
+  .upload__tools-item {
+    margin: 0;
+    margin-top: 40px;
+    float: none;
+    position: relative;
+    &:first-child {
+      margin: 0;
+      margin-top: 40px;
+    }
+  }
+  .upload__tools-item--active {
+    .upload__size {
+      display: block;
+      position: static;
+    }
+  }
+  .upload__tools-item {
+    @include clearfix;
+  }
+  .upload__slide {
+    top: 13px;
+  }
+}
+@media ($desktop-width) {
+  .upload__buttons {
+    display: flex;
+    width: 410px;
+  }
+}

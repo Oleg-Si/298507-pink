@@ -1,6 +1,24 @@
 .features {
   background-color: #f2f2f2;
 }
+.features__wrapper {
+  @include container;
+  position: relative;
+  min-height: 750px;
+  padding: 20px;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    width: 180px;
+    height: 290px;
+    background: url("/img/iphone-screen-mobile@1x.png") no-repeat 10px 10px;
+  }
+}
+.features__item {
+  text-align: center;
+}
 .features__title {
   @include font-bold;
   font-size: 18px;
@@ -14,4 +32,36 @@
   font-size: 14px;
   line-height: 24px;
   color: $font-main-color;
+}
+@media ($tablet-width) {
+  .features__wrapper {
+    padding-left: 300px;
+    position: relative;
+    min-height: auto;
+  }
+  .features__item {
+    text-align: left;
+  }
+  .features__wrapper::before {
+    content: "";
+    position: absolute;
+    left: 50px;
+    top: -20px;
+    width: 300px;
+    height: 290px;
+    background: url("/img/iphone-screen-mobile@1x.png") no-repeat 10px 10px;
+  }
+}
+@media ($desktop-width) {
+  .features__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10px;
+    padding-top: 300px;
+  }
+  .features__item {
+    width: 260px;
+    text-align: center;
+  }
 }

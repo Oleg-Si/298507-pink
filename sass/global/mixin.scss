@@ -14,3 +14,20 @@
   font-family: $font-family;
   font-weight: 300;
 }
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@mixin container() {
+  width: 320px;
+  margin: 0 auto;
+  @media ($tablet-width) {
+    width: 660px;
+  }
+  @media ($desktop-width) {
+    width: 960px;
+  }
+}

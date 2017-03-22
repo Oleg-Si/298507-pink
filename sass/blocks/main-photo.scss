@@ -1,0 +1,8 @@
+.main-photo {
+  @include container;
+  width: 320px;
+  a {
+    display: block;
+    width: 100%;
+  }
+}

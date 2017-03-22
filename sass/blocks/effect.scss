@@ -1,0 +1,16 @@
+.effect {
+  display: none;
+}
+.effect__wrapper {
+  @include container;
+  padding: 0 20px;
+}
+@media ($tablet-width) {
+  .effect {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .effect__wrapper {
+    padding-left: 300px;
+  }
+}

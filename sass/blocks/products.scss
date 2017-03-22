@@ -1,17 +1,19 @@
-.products__price {
-  background-color: #283645;
+.products__item:nth-child(n+3) {
+  display: none;
 }
-.products__price-title {
-  @include font-bold;
-  font-size: 18px;
-  line-height: 30px;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-.products__price-item {
-  @include font-light;
-  font-size: 24px;
-  line-height: 30px;
-  color: #ffffff;
-  text-transform: uppercase;
+@media ($tablet-width) {
+  .products__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .products__item {
+    width: 150px;
+    &--description {
+    display: block;
+    margin-top: auto;
+    }
+  }
+  .products__item:nth-child(n+2) {
+  display: block;
+  }
 }

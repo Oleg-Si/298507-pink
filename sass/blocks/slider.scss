@@ -1,0 +1,23 @@
+.slider {
+  @include clearfix;
+  min-width: 840px;
+  display: block;
+  transform: translateX(-280px);
+}
+.slider__item {
+  float: left;
+}
+@media ($tablet-width) {
+  .slider{
+    @include clearfix;
+    transform: none;
+    min-width: auto;
+  }
+  .cost__item {
+    margin: 0;
+    float: left;
+    &--description {
+      margin-top: 95px;
+    }
+  }
+}
