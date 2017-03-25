@@ -1,21 +1,50 @@
+.price-list {
+  margin-bottom: 40px;
+  min-height: 151px;
+}
 .price-list__item {
-  @include font-light;
+  @include font-normal;
   font-size: 14px;
   line-height: 30px;
   color: $font-main-color;
   text-transform: uppercase;
   display: block;
-  height: 45px;
+  min-height: 61px;
   border: 2px solid #e5e5e5;
   border-top: none;
   border-left: none;
   margin: 0;
+  padding-top: 15px;
+  text-align: left;
+  padding-left: 21px;
+  background-color: #ffffff;
+
 }
 @media ($tablet-width) {
   .price-list__item {
     font-size: 0;
+    min-height: 47px;
+    min-width: 154px;
     &--description {
       font-size: 14px;
+      text-transform: none;
+      padding-top: 6px;
+      padding-left: 15px;
+      border-left: 2px solid #e5e5e5;
+      &:first-child {
+        border-top: 2px solid #e5e5e5;
+      }
+    }
+  }
+}
+@media ($desktop-width) {
+  .price-list__item {
+    min-width: 235px;
+    min-height: 60px;
+    &--description {
+      font-size: 18px;
+      padding-top: 14px;
+      padding-left: 20px;
     }
   }
 }

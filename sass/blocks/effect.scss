@@ -1,9 +1,24 @@
 .effect {
   display: none;
+  min-height: 320px;
+  padding-top: 71px;
+  h2 {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+  p {
+    margin: 0;
+    padding-right: 30px;
+    margin-bottom: 10px;
+  }
+  a {
+    color: $font-secondary-color;
+  }
 }
 .effect__wrapper {
   @include container;
-  padding: 0 20px;
+  padding: 0 50px;
 }
 @media ($tablet-width) {
   .effect {
@@ -11,6 +26,30 @@
     margin-bottom: 30px;
   }
   .effect__wrapper {
-    padding-left: 300px;
+    padding-left: 330px;
+    padding-right: 0;
+  }
+}
+@media ($desktop-width) {
+  br {
+    display: none;
+  }
+  .effect__wrapper {
+    padding-left: 375px;
+    padding-top: 10px;
+    p {
+      font-size: 18px;
+      line-height: 30px;
+      color: $font-main-color;
+      padding-right: 50px;
+      margin-bottom: 31px;
+    }
+    h2 {
+      margin-bottom: 21px;
+    }
+    a {
+      font-size: 18px;
+      line-height: 30px;
+    }
   }
 }

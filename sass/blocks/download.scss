@@ -1,5 +1,7 @@
 .download {
+  max-height: 271px;
   background-color: #1d2631;
+  margin-bottom: 42px;
   h2 {
     display: none;
     @include font-light;
@@ -20,10 +22,20 @@
   line-height: 24px;
   color: #ffffff;
 }
+.download__link {
+  display: flex;
+  justify-content: space-around;
+  a {
+    display: block;
+    width: 47px;
+    height: 56px;
+    margin-bottom: 8px;
+  }
+}
 @media ($tablet-width) {
   .download {
-    margin-top: -220px;
-    margin-bottom: 120px;
+    margin-top: -420px;
+    margin-bottom: 202px;
     position: relative;
     padding-right: 350px;
     background-color: transparent;
@@ -32,7 +44,11 @@
     width: 300px;
   }
 }
-
+@media ($desktop-width) {
+  .download {
+    margin-bottom: 220px;
+  }
+}
 /*h2 {
       display: block;
       width: 180px;

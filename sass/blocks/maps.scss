@@ -1,7 +1,17 @@
 .maps {
   @include container;
-  height: 400px;
+  height: 200px;
   background: url("/img/bg-map-mobile@1x.png") no-repeat center;
+}
+@media ($tablet-width) {
+  .maps {
+    height: 388px;
+  }
+}
+@media ($desktop-width) {
+  .maps {
+    height: 490px;
+  }
 }
 iframe {
   border: none;

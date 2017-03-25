@@ -1,7 +1,11 @@
+.contacts {
+  min-height: 265px;
+}
 @media ($tablet-width) {
   .contacts {
     display: flex;
     flex-wrap: wrap;
+    min-height: 153px;
   }
   .contacts__item {
     width: 300px;

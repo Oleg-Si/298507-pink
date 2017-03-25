@@ -1,8 +1,29 @@
 .page-header {
-  background-color: #283645;
   background: #283645 url("../../img/bg-back-mobile@1x.jpg") no-repeat center bottom;
+  &--index {
+    background:
+      url("../../img/iphone-hand-mobile@1x.png") no-repeat left bottom,
+      url("../../img/bg-back-mobile@1x.jpg") no-repeat center bottom;
+    background-color: #283645;
+    }
 }
 
 .page-header__wrapper {
   @include container;
+}
+@media ($tablet-width) {
+  .page-header {
+    min-height: 984px;
+    &--index {
+      background:
+        url("../../img/iphone-hand-mobile@1x.png") no-repeat left bottom,
+        url("../../img/bg-back-mobile@1x.jpg") no-repeat center bottom;
+      background-color: #283645;
+      }
+  }
+}
+@media ($desktop-width) {
+  .page-header {
+    min-height: 853px;
+  }
 }
