@@ -21,3 +21,17 @@
     opacity: 0.1;
   }
 }
+@media ($tablet-width) {
+  .button {
+    width: 300px;
+    margin-left: -15px;
+  }
+}
+@media ($desktop-width) {
+  .button {
+    width: 300px;
+    margin-left: -20px;
+    font-size: 21px;
+    margin-bottom: 70px;
+  }
+}

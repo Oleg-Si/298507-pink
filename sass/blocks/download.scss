@@ -34,24 +34,50 @@
 }
 @media ($tablet-width) {
   .download {
-    margin-top: -420px;
-    margin-bottom: 202px;
+    margin-top: -547px;
+    margin-bottom: 328px;
     position: relative;
-    padding-right: 350px;
+    padding-right: 330px;
     background-color: transparent;
   }
   .download__wrapper {
     width: 300px;
-  }
-}
-@media ($desktop-width) {
-  .download {
-    margin-bottom: 220px;
-  }
-}
-/*h2 {
+    .visually-none {
       display: block;
       width: 180px;
       margin: 0 auto;
       text-align: center;
-*/
+      margin-bottom: 29px;
+    }
+  }
+  .download__title {
+    font-size: 18px;
+    line-height: 24px;
+    width: 300px;
+    margin-left: -14px
+  }
+  .download__link {
+    margin-bottom: 42px;
+  }
+}
+@media ($desktop-width) {
+  .download {
+    margin-top: -655px;
+    margin-bottom: 455px;
+    padding-right: 642px;
+  }
+  .download__wrapper {
+    .visually-none {
+      font-size: 50px;
+      line-height: 60px;
+      width: 250px;
+      margin-bottom: 52px;
+    }
+  }
+  .download__title {
+    margin-left: -20px
+  }
+  .download__link {
+    margin-bottom: 44px;
+  }
+}

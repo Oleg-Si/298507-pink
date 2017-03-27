@@ -1,5 +1,14 @@
+.page-footer__wrapper {
+  .copyright {
+    margin-left: 54px;
+    p {
+      margin-top: 23px;
+    }
+  }
+}
 .copyright {
   width: 150px;
+  float: left;
   p {
     @include font-normal;
     font-size: 14px;

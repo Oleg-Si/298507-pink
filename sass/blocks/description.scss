@@ -8,4 +8,44 @@
     color: $font-main-color;
     text-align: center;
   }
+  .visually-none {
+    display: none;
+  }
+  &--form {
+    padding-top: 32px;
+    margin-bottom: 17px;
+    p {
+      @include font-normal;
+    }
+  }
 }
+@media ($tablet-width) {
+  .description {
+    .visually-none {
+      display: block;
+    }
+    &--form {
+      padding-top: 75px;
+      padding-left: 80px;
+      margin: 0 auto;
+      p {
+        font-size: 18px;
+        line-height: 30px;
+        width: 500px;
+      }
+    }
+  }
+}
+@media ($desktop-width) {
+  .description {
+     &--form {
+       p {
+         width: 800px;
+       }
+       .visually-none {
+         display: inline;
+       }
+    }
+  }
+}
+

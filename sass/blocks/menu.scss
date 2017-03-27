@@ -1,10 +1,13 @@
 .menu {
-  height: 721px;
+  min-height: 721px;
   position: relative;
 
   a {
     color: #ffffff;
     text-decoration: none;
+  }
+  &--form {
+    min-height: 195px;
   }
   &--closed {
     .menu__list {
@@ -24,7 +27,7 @@
   }
 }
 .menu--closed {
-  height: 463px;
+  min-height: 463px;
 }
 .menu__header {
   @include clearfix;
@@ -67,13 +70,24 @@
   .menu__header {
     min-height: 110px;
   }
-
+  .menu {
+    &--closed {
+      .menu__header {
+      min-height: 110px;
+      }
+    }
+  }
+  .menu__title {
+    font-size: 50px;
+    line-height: 60px;
+    width: 500px;
+    padding-top: 41px;
+  }
 }
 @media ($desktop-width) {
   .menu {
     @include clearfix;
     background-size: cover;
-    /*min-height: 853px;*/
     &--closed {
       .menu__header {
         position: static;
@@ -83,7 +97,7 @@
       .menu__list {
         display: block;
         float: left;
-        width: 800px;
+        width: 900px;
         min-height: 110px;
         margin-top: -110px;
         margin-left: 166px;
@@ -104,7 +118,7 @@
     float: left;
     width: 800px;
     padding-right: 10px;
-    padding-left: 160px;
+    padding-left: 163px;
     padding-top: 47px;
     background-color: transparent;
   }
@@ -117,12 +131,13 @@
     line-height: 18px;
     text-transform: none;
     padding: 0;
-    margin-right: 79px;
-    &:nth-of-type(4n) {
+    margin-right: 76px;
+    &:last-child {
       margin-right: 0;
     }
   }
   .menu__title {
-    margin-top: 0;
+    margin-top: 22px;
+    width: 800px;
   }
 }

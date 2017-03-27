@@ -54,13 +54,14 @@
     padding-top: 90px;
   }
   .cost__price {
-    min-height: 77px;
-    padding-top: 10px;
+    min-height: 79px;
+    padding-top: 12px;
+    padding-left: 5px;
     min-width: 154px;
   }
   .cost__price-title {
     font-size: 16px;
-    margin-bottom: 0;
+    margin-bottom: -2px;
   }
   .cost__price-item {
     font-size: 18px;
@@ -72,6 +73,9 @@
     &--description {
       display: block;
       float: left;
+      .cost__price {
+        min-height: 78px;
+      }
     }
   }
   .cost__toggles {
@@ -103,5 +107,8 @@
   }
   .cost__price-item {
     font-size: 24px;
+  }
+  .cost__item--description .cost__price {
+    min-height: 97px;
   }
 }

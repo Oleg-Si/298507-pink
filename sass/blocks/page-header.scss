@@ -6,10 +6,14 @@
       url("../../img/bg-back-mobile@1x.jpg") no-repeat center bottom;
     background-color: #283645;
     }
+  &--form {
+    min-height: 496px;
+  }
 }
 
 .page-header__wrapper {
   @include container;
+  width: 100%;
 }
 @media ($tablet-width) {
   .page-header {
@@ -20,10 +24,23 @@
         url("../../img/bg-back-mobile@1x.jpg") no-repeat center bottom;
       background-color: #283645;
       }
+    &--form {
+      min-height: 695px;
+    }
   }
 }
 @media ($desktop-width) {
   .page-header {
     min-height: 853px;
+    &--form {
+      min-height: 150px;
+      .menu--closed {
+        min-height: 394px;
+      }
+    }
+  }
+  .page-header__wrapper {
+    @include clearfix;
   }
 }
+
