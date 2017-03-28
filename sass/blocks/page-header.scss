@@ -9,6 +9,9 @@
   &--form {
     min-height: 496px;
   }
+  &--photo {
+    min-height: 200px;
+  }
 }
 
 .page-header__wrapper {
@@ -27,6 +30,9 @@
     &--form {
       min-height: 695px;
     }
+    &--photo {
+    min-height: 695px;
+    }
   }
 }
 @media ($desktop-width) {
@@ -36,6 +42,15 @@
       min-height: 150px;
       .menu--closed {
         min-height: 394px;
+      }
+    }
+    &--photo {
+      min-height: 394px;
+      .menu--closed {
+        min-height: 294px;
+      }
+      .menu p {
+        width: 420px;
       }
     }
   }

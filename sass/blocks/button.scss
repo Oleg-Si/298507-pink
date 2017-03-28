@@ -14,10 +14,15 @@
   margin-top: 8px;
   margin-bottom: 32px;
   &--post {
-    color: $font-main-color;
+    color: $font-secondary-color;
+    text-align: center;
+    border: 3px solid #d22856;
+    margin-bottom: 12px;
   }
   &--cancel {
-    color: $font-secondary-color;
+    color: $font-main-color;
+    text-align: center;
+    border: 3px solid #283645;
     opacity: 0.1;
   }
 }
@@ -25,13 +30,30 @@
   .button {
     width: 300px;
     margin-left: -15px;
+    &--post {
+      margin-top: 67px;
+      width: 260px;
+      margin-left: 25px;
+      margin-bottom: 25px;
+    }
+    &--cancel {
+      width: 260px;
+      margin-left: 25px;
+    }
   }
 }
 @media ($desktop-width) {
   .button {
-    width: 300px;
-    margin-left: -20px;
-    font-size: 21px;
-    margin-bottom: 70px;
+    font-size: 18px;
+    &--post {
+      width: 183px;
+      margin-top: 135px;
+      margin-left: 27px;
+    }
+    &--cancel {
+      width: 180px;
+      margin-top: 135px;
+      margin-left: 0;
+    }
   }
 }

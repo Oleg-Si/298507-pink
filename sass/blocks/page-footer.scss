@@ -80,6 +80,11 @@
       padding-left: 40px;
     }
   }
+  .page-footer--photo {
+    .page-footer__wrapper {
+      padding-top: 0px;
+    }
+  }
 }
 @media ($desktop-width) {
   .contacts__item:nth-of-type(2) {
@@ -95,11 +100,16 @@
     margin-bottom: 42px;
   }
   .page-footer__wrapper {
-    padding-top: 36px;
+    padding-top: 3px;
   }
   .contacts__item {
     b {
       margin-bottom: 25px;
+    }
+  }
+  .page-footer--photo {
+    .page-footer__wrapper {
+      padding-top: 68px;
     }
   }
 }

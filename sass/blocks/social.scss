@@ -25,7 +25,16 @@
   }
 }
 @media ($desktop-width) {
-  .social {
-    padding-top: 35px;
+   .page-footer__copyright {
+     .social {
+      padding-top: 35px;
+    }
+  }
+  .page-footer__wrapper {
+    .social {
+      padding-top: 0;
+      width: 520px;
+      padding-left: 215px;
+    }
   }
 }
