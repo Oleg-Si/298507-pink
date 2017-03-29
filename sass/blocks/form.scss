@@ -130,6 +130,7 @@ textarea {
   padding-left: 19px;
   padding-top: 14px;
   border: 2px solid #e5e5e5;
+  resize: none;
 }
 .form__send {
   @include container;

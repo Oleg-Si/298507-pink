@@ -18,6 +18,9 @@
   }
 }
 @media ($desktop-width) {
+  .contacts {
+    min-height: 140px;
+  }
   .contacts__item {
     &:nth-of-type(2) {
       padding-right: 19px;
