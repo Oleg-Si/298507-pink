@@ -1,10 +1,16 @@
 .menu {
-  height: 708px;
+  min-height: 721px;
   position: relative;
-  background: #283645 url("../../img/bg-back-mobile@1x.jpg") no-repeat center bottom;
+
   a {
     color: #ffffff;
     text-decoration: none;
+  }
+  &--form {
+    min-height: 195px;
+  }
+  &--photo {
+    min-height: 495px;
   }
   &--closed {
     .menu__list {
@@ -14,6 +20,7 @@
       @include clearfix;
       background-color: rgba(0, 0, 0, 0.3);
       border: none;
+      min-height: 66px;
     }
   }
   &--hand {
@@ -23,7 +30,7 @@
   }
 }
 .menu--closed {
-  height: 463px;
+  min-height: 463px;
 }
 .menu__header {
   @include clearfix;
@@ -49,7 +56,7 @@
   border: 1px solid #000000;
   border-top: 0;
   box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
-  min-height: 62px;
+  min-height: 64px;
   padding-top: 15px;
 }
 .menu__title {
@@ -63,17 +70,27 @@
   margin-top: 28px;
 }
 @media ($tablet-width) {
-  .menu--hand {
-    background:
-      url("../../img/iphone-hand-mobile@1x.png") no-repeat 250px bottom,
-      url("../../img/bg-back-mobile@1x.jpg") no-repeat center bottom;
+  .menu__header {
+    min-height: 110px;
+  }
+  .menu {
+    &--closed {
+      .menu__header {
+      min-height: 110px;
+      }
+    }
+  }
+  .menu__title {
+    font-size: 50px;
+    line-height: 60px;
+    width: 500px;
+    padding-top: 41px;
   }
 }
 @media ($desktop-width) {
   .menu {
     @include clearfix;
     background-size: cover;
-    /*min-height: 853px;*/
     &--closed {
       .menu__header {
         position: static;
@@ -83,9 +100,11 @@
       .menu__list {
         display: block;
         float: left;
-        width: 800px;
+        width: 900px;
         min-height: 110px;
         margin-top: -110px;
+        margin-left: 166px;
+        padding-top: 45px;
       }
     }
   }
@@ -102,7 +121,7 @@
     float: left;
     width: 800px;
     padding-right: 10px;
-    padding-left: 160px;
+    padding-left: 163px;
     padding-top: 47px;
     background-color: transparent;
   }
@@ -115,12 +134,13 @@
     line-height: 18px;
     text-transform: none;
     padding: 0;
-    margin-right: 79px;
-    &:nth-of-type(4n) {
+    margin-right: 76px;
+    &:last-child {
       margin-right: 0;
     }
   }
   .menu__title {
-    margin-top: 0;
+    margin-top: 22px;
+    width: 800px;
   }
 }

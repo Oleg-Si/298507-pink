@@ -8,4 +8,91 @@
     color: $font-main-color;
     text-align: center;
   }
+  .visually-none {
+    display: none;
+  }
+  &--form {
+    padding-top: 32px;
+    margin-bottom: 17px;
+    p {
+      @include font-normal;
+    }
+  }
+  &--photo {
+    width: 290px;
+    padding-top: 32px;
+    margin-bottom: 50px;
+      p {
+      @include font-normal;
+    }
+  }
+  &--upload {
+    padding-top: 10px;
+    padding-left: 18px;
+    margin-bottom: 42px;
+    p {
+      @include font-normal;
+    }
+  }
+}
+@media ($tablet-width) {
+  .description {
+    .visually-none {
+      display: block;
+    }
+    &--form {
+      padding-top: 75px;
+      padding-left: 80px;
+      margin: 0 auto;
+      p {
+        font-size: 18px;
+        line-height: 30px;
+        width: 500px;
+      }
+    }
+    &--photo {
+      width: 500px;
+      padding-top: 74px;
+      margin-bottom: 76px;
+      p {
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+    &--upload {
+      width: 500px;
+      padding-top: 27px;
+      margin-bottom: 69px;
+      p {
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+@media ($desktop-width) {
+  .description {
+    &--form {
+      p {
+        width: 800px;
+      }
+      .visually-none {
+        display: inline;
+      }
+    }
+    &--photo {
+      width: 660px;
+      margin-bottom: 88px;
+      p {
+        width: 620px;
+      }
+    }
+    &--upload {
+      padding-top: 36px;
+      margin-bottom: 66px;
+      br {
+        display: block;
+      }
+    }
+  }
 }

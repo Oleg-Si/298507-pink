@@ -1,15 +1,17 @@
 .cost {
   background-color: #f2f2f2;
+  min-height: 471px;
 }
 .cost__wrapper {
   width: 320px;
   overflow: hidden;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px;
+  padding-top: 91px;
 }
 .cost__item {
   text-align: center;
-  width: 280px;
+  width: 278px;
   &--description {
     display: none;
   }
@@ -17,8 +19,13 @@
 .cost__price {
   background-color: #283645;
   border-right: 2px solid #e5e5e5;
+  min-height: 98px;
+  padding-top: 16px;
   &:last-child {
     border-right: none;
+  }
+  &--description {
+    background-color: transparent;
   }
 }
 .cost__price-title {
@@ -27,6 +34,8 @@
   line-height: 30px;
   color: #ffffff;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 2px;
 }
 .cost__price-item {
   @include font-light;
@@ -36,20 +45,70 @@
   text-transform: uppercase;
 }
 @media ($tablet-width) {
+  .cost {
+    min-height: 377px;
+  }
   .cost__wrapper {
     @include container;
     width: auto;
+    padding-top: 90px;
+  }
+  .cost__price {
+    min-height: 79px;
+    padding-top: 12px;
+    padding-left: 5px;
+    min-width: 154px;
+  }
+  .cost__price-title {
+    font-size: 16px;
+    margin-bottom: -2px;
+  }
+  .cost__price-item {
+    font-size: 18px;
+    line-height: 30px;
   }
   .cost__item {
-    width: 150px;
+    width: 155px;
+    float: left;
     &--description {
-    display: block;
-    margin-top: 95px;
-    border-left: 2px solid #e5e5e5;
-    border-top: 2px solid #e5e5e5
+      display: block;
+      float: left;
+      .cost__price {
+        min-height: 78px;
+      }
     }
+  }
+  .cost__toggles {
+    display: none;
   }
   .products__item:nth-child(n+2) {
   display: block;
+  }
+}
+@media ($desktop-width) {
+  .cost__wrapper {
+    padding: 0 10px;
+    padding-top: 150px;
+  }
+  .cost {
+    min-height: 525px;
+  }
+  .cost__item {
+    width: 235px;
+  }
+  .cost__price {
+    width: 235px;
+    min-height: 98px;
+  }
+  .cost__price-title {
+    font-size: 18px;
+    padding-top: 5px;
+    margin-bottom: 2px;
+  }
+  .cost__price-item {
+    font-size: 24px;
+  }
+  .cost__item--description .cost__price {
+    min-height: 97px;
   }
 }

@@ -2,7 +2,7 @@
   @include clearfix;
   min-width: 840px;
   display: block;
-  transform: translateX(-280px);
+  transform: translateX(-276px);
 }
 .slider__item {
   float: left;
@@ -12,12 +12,5 @@
     @include clearfix;
     transform: none;
     min-width: auto;
-  }
-  .cost__item {
-    margin: 0;
-    float: left;
-    &--description {
-      margin-top: 95px;
-    }
   }
 }

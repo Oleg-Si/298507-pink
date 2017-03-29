@@ -1,7 +1,12 @@
+.contacts {
+  min-height: 265px;
+}
+
 @media ($tablet-width) {
   .contacts {
     display: flex;
     flex-wrap: wrap;
+    min-height: 153px;
   }
   .contacts__item {
     width: 300px;
@@ -9,6 +14,22 @@
       margin-left: auto;
       margin-right: auto;
       padding: 0 20px;
+    }
+  }
+}
+@media ($desktop-width) {
+  .contacts {
+    min-height: 140px;
+  }
+  .contacts__item {
+    &:nth-of-type(2) {
+      padding-right: 19px;
+      b {
+        margin-bottom: 27px;
+      }
+    }
+    &:nth-of-type(1) {
+      padding-right: 19px;
     }
   }
 }

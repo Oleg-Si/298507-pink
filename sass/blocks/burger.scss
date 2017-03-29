@@ -4,7 +4,12 @@
   width: 120px;
   height: 40px;
   background-color: transparent;
-  float: left;
+  float: right;
+}
+@media ($tablet-width) {
+  .burger {
+    float: right;
+  }
 }
 @media ($desktop-width) {
   .burger {

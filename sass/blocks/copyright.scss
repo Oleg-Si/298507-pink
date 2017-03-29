@@ -1,9 +1,37 @@
+.page-footer__wrapper {
+  .copyright {
+    margin-left: 54px;
+    p {
+      margin-top: 23px;
+    }
+  }
+}
 .copyright {
   width: 150px;
+  float: left;
   p {
     @include font-normal;
     font-size: 14px;
     line-height: 18px;
     color: $font-main-color;
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 56px;
+  }
+}
+@media ($desktop-width) {
+  .copyright {
+    padding-top: 35px;
+    padding-left: 0;
+    p {
+      font-size: 18px;
+      padding-left: 0;
+    }
+  }
+  .page-footer__wrapper {
+    .copyright {
+      padding-top: 0px;
+      padding-left: 68px;
+    }
   }
 }

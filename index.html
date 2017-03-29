@@ -7,7 +7,7 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header  page-header--index">
       <nav class="menu  menu--closed">
         <div class="menu__header">
           <div class="page-header__wrapper">
@@ -31,18 +31,17 @@
               <a href="form.html">Конкурс</a>
             </li>
             <li class="menu__item">
-              <a href="https://htmlacademy.ru/">HTML academy</a>
+              <a href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
         </div>
-        <p class="menu__title">Конкурс на самое безбашенное путешествие с Пинк</p>
       </nav>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Приложение "PINK"</h1>
       <div class="download">
         <div class="download__wrapper">
-          <h2>Взгляните на жизнь иначе</h2>
+          <h2 class="visually-none">Взгляните на жизнь иначе!</h2>
           <a class="button  button--download" href="#">Скачать приложение</a>
           <div class="download__link">
             <a class="download__item" href="#">Apple</a>
@@ -65,7 +64,7 @@
           </div>
           <div class="features__item">
             <h2 class="features__title">Меняет мир вокруг</h2>
-            <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br> усилить эффект</p>
           </div>
           <div class="features__item">
             <h2 class="features__title">Заводит новых друзей</h2>
@@ -75,90 +74,91 @@
       </section>
       <section class="effect">
         <div class="effect__wrapper">
-          <h2>Эффект на 24 часа!</h2>
-          <p>Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <h2>Эффект<br> на 24 часа!</h2>
+          <p>Британские ученые провели исследования и доказали, что положительный эффект<br> от использования приложения длится<br> целые сутки!</p>
           <a href="#">Узнать больше об исследовании</a>
         </div>
       </section>
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="reviews__wrapper">
+          <a class="reviews__next-page">1</a>
+          <a class="reviews__prev-page">2</a>
           <div class="reviews__items">
             <blockquote class="reviews__item">
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__author-info">25 лет, водитель трамвая</p>
-              <p class="reviews__author-post">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+              <p class="reviews__author-post"><span class="reviews__visually-none">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="reviews__visually-none">»</span></p>
             </blockquote>
             <blockquote class="reviews__item">
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__author-info">25 лет, водитель трамвая</p>
-              <p class="reviews__author-post">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+              <p class="reviews__author-post"><span class="reviews__visually-none">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="reviews__visually-none">»</span></p>
             </blockquote>
             <blockquote class="reviews__item">
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__author-info">25 лет, водитель трамвая</p>
-              <p class="reviews__author-post">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+              <p class="reviews__author-post"><span class="reviews__visually-none">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="reviews__visually-none">»</span></p>
             </blockquote>
           </div>
         </div>
         <div class="toggles">
-          <a class="toggles__item  is-active" href="#">1</a>
-          <a class="toggles__item" href="#">2</a>
-          <a class="toggles__item" href="#">3</a>
+          <a class="toggles__item  toggles__item--active" href="#"><span class="visually-hidden">1</span></a>
+          <a class="toggles__item" href="#"><span class="visually-hidden">2</span></a>
+          <a class="toggles__item" href="#"><span class="visually-hidden">3</span></a>
         </div>
       </section>
       <section class="cost">
         <h2 class="visually-hidden">Прайс-лист</h2>
         <div class="cost__wrapper">
           <div class="slider">
-
-              <div class="cost__item cost__item--description">
-                <div class="price-list">
-                  <p class="price-list__item  price-list__item--add  price-list__item--description">Розовый фильтр</p>
-                  <p class="price-list__item  price-list__item--add  price-list__item--description">Смайлики</p>
-                  <p class="price-list__item  price-list__item--not  price-list__item--description">Комментарии</p>
-                </div>
+            <div class="cost__item  slider__item  cost__item--description">
+              <div class="cost__price cost__price--description"></div>
+              <div class="price-list">
+                <p class="price-list__item  price-list__item--add  price-list__item--description">Розовый фильтр</p>
+                <p class="price-list__item  price-list__item--add  price-list__item--description">Смайлики</p>
+                <p class="price-list__item  price-list__item--not  price-list__item--description">Комментарии</p>
               </div>
-              <div class="cost__item  slider__item">
-                <div class="cost__price">
-                  <p class="cost__price-title">Стандарт</p>
-                  <span class="cost__price-item">3,99 USD</span>
-                </div>
-                <div class="price-list">
-                  <p class="price-list__item  price-list__item--add">Розовый фильтр</p>
-                  <p class="price-list__item  price-list__item--add">Смайлики</p>
-                  <p class="price-list__item  price-list__item--not">Комментарии</p>
-                </div>
+            </div>
+            <div class="cost__item  slider__item">
+              <div class="cost__price">
+                <p class="cost__price-title">База</p>
+                <span class="cost__price-item">1,99 USD</span>
               </div>
-              <div class="cost__item  slider__item">
-                <div class="cost__price">
-                  <p class="cost__price-title">Стандарт</p>
-                  <span class="cost__price-item">3,99 USD</span>
-                </div>
-                <div class="price-list">
-                  <p class="price-list__item  price-list__item--add">Розовый фильтр</p>
-                  <p class="price-list__item  price-list__item--add">Смайлики</p>
-                  <p class="price-list__item  price-list__item--not">Комментарии</p>
-                </div>
+              <div class="price-list">
+                <p class="price-list__item  price-list__item--add">Розовый фильтр</p>
+                <p class="price-list__item  price-list__item--add">Смайлики</p>
+                <p class="price-list__item  price-list__item--not">Комментарии</p>
               </div>
-              <div class="cost__item  slider__item">
-                <div class="cost__price">
-                  <p class="cost__price-title">Стандарт</p>
-                  <span class="cost__price-item">3,99 USD</span>
-                </div>
-                <div class="price-list">
-                  <p class="price-list__item  price-list__item--add">Розовый фильтр</p>
-                  <p class="price-list__item  price-list__item--add">Смайлики</p>
-                  <p class="price-list__item  price-list__item--not">Комментарии</p>
-                </div>
+            </div>
+            <div class="cost__item  slider__item">
+              <div class="cost__price">
+                <p class="cost__price-title">Стандарт</p>
+                <span class="cost__price-item">3,99 USD</span>
               </div>
-
+              <div class="price-list">
+                <p class="price-list__item  price-list__item--add">Розовый фильтр</p>
+                <p class="price-list__item  price-list__item--add">Смайлики</p>
+                <p class="price-list__item  price-list__item--not">Комментарии</p>
+              </div>
+            </div>
+            <div class="cost__item  slider__item">
+              <div class="cost__price">
+                <p class="cost__price-title">Анлим</p>
+                <span class="cost__price-item">9,99 USD</span>
+              </div>
+              <div class="price-list">
+                <p class="price-list__item  price-list__item--add">Розовый фильтр</p>
+                <p class="price-list__item  price-list__item--add">Смайлики</p>
+                <p class="price-list__item  price-list__item--not">Комментарии</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="toggles">
-          <a class="toggles__item  is-active" href="#">1</a>
-          <a class="toggles__item" href="#">2</a>
-          <a class="toggles__item" href="#">3</a>
+        <div class="toggles  cost__toggles">
+          <a class="toggles__item" href="#"><span class="visually-hidden">1</span></a>
+          <a class="toggles__item  toggles__item--active" href="#"><span class="visually-hidden">2</span></a>
+          <a class="toggles__item" href="#"><span class="visually-hidden">3</span></a>
         </div>
       </section>
     </main>
@@ -188,13 +188,13 @@
           <div class="logo__img">Pink</div>
         </a>
         <div class="social">
-          <a class="social__link  social__link--twitter" href="https://twitter.com/">Твиттер</a>
-          <a class="social__link  social__link--facebook" href="https://www.facebook.com/">Фейсбук</a>
-          <a class="social__link  social__link--youtube" href="https://www.youtube.com/">Ютуб</a>
+          <a class="social__link  social__link--twitter" href="https://twitter.com/"><span class="visually-hidden">Твиттер</span></a>
+          <a class="social__link  social__link--facebook" href="https://www.facebook.com/"><span class="visually-hidden">Фейсбук</span></a>
+          <a class="social__link  social__link--youtube" href="https://www.youtube.com/"><span class="visually-hidden">Ютуб</span></a>
         </div>
         <div class="copyright">
           <p>Разработано</p>
-          <a href="https://htmlacademy.ru/">Htmlacademy</a>
+          <a href="https://htmlacademy.ru/"><span class="visually-hidden">Htmlacademy</span></a>
         </div>
       </div>
     </footer>

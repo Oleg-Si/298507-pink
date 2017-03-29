@@ -1,8 +1,60 @@
 .page-header {
-  background-color: #283645;
   background: #283645 url("../../img/bg-back-mobile@1x.jpg") no-repeat center bottom;
+  &--index {
+    background:
+      url("../../img/iphone-hand-mobile@1x.png") no-repeat left bottom,
+      url("../../img/bg-back-mobile@1x.jpg") no-repeat center bottom;
+    background-color: #283645;
+    }
+  &--form {
+    min-height: 496px;
+  }
+  &--photo {
+    min-height: 200px;
+  }
 }
 
 .page-header__wrapper {
   @include container;
+  width: 100%;
+}
+@media ($tablet-width) {
+  .page-header {
+    min-height: 984px;
+    &--index {
+      background:
+        url("../../img/iphone-hand-mobile@1x.png") no-repeat left bottom,
+        url("../../img/bg-back-mobile@1x.jpg") no-repeat center bottom;
+      background-color: #283645;
+      }
+    &--form {
+      min-height: 695px;
+    }
+    &--photo {
+    min-height: 695px;
+    }
+  }
+}
+@media ($desktop-width) {
+  .page-header {
+    min-height: 853px;
+    &--form {
+      min-height: 150px;
+      .menu--closed {
+        min-height: 394px;
+      }
+    }
+    &--photo {
+      min-height: 394px;
+      .menu--closed {
+        min-height: 294px;
+      }
+      .menu p {
+        width: 420px;
+      }
+    }
+  }
+  .page-header__wrapper {
+    @include clearfix;
+  }
 }
