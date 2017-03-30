@@ -30,6 +30,9 @@
   .button {
     width: 300px;
     margin-left: -15px;
+    &--download {
+      margin-bottom: 46px;
+    }
     &--post {
       margin-top: 67px;
       width: 260px;
@@ -54,6 +57,10 @@
       width: 180px;
       margin-top: 135px;
       margin-left: 0;
+    }
+    &--download {
+      font-size: 21px;
+      margin-bottom: 67px;
     }
   }
 }

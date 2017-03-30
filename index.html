@@ -8,15 +8,17 @@
   </head>
   <body>
     <header class="page-header  page-header--index">
-      <nav class="menu  menu--closed">
+      <nav class="menu  menu--closed  menu--no-js">
         <div class="menu__header">
           <div class="page-header__wrapper">
             <a class="logo">
-              <div class="logo__img">Pink</div>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 700px)" srcset="img/logo-pink-white-tablet.svg">
+                <img src="img/logo-pink-white-mobile.svg" width="76" height="37" alt="Приложение "Pink"">
+              </picture>
             </a>
-            <button class="burger  burger--closed" type="button">
-              <span class="visually-hidden">Открыть/Закрыть</span>
-            </button>
+            <button class="burger  burger--closed" type="button"></button>
           </div>
         </div>
         <div class="page-header__wrapper">
@@ -44,9 +46,9 @@
           <h2 class="visually-none">Взгляните на жизнь иначе!</h2>
           <a class="button  button--download" href="#">Скачать приложение</a>
           <div class="download__link">
-            <a class="download__item" href="#">Apple</a>
-            <a class="download__item" href="#">Android</a>
-            <a class="download__item" href="#">Windows</a>
+            <a class="download__item  download__item--Apple" href="#"><span class="visually-hidden">Apple</span></a>
+            <a class="download__item  download__item--Android" href="#"><span class="visually-hidden">Android</span></a>
+            <a class="download__item  download__item--Windows" href="#"><span class="visually-hidden">Windows</span></a>
           </div>
           <p class="download__title">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
@@ -115,9 +117,9 @@
             <div class="cost__item  slider__item  cost__item--description">
               <div class="cost__price cost__price--description"></div>
               <div class="price-list">
-                <p class="price-list__item  price-list__item--add  price-list__item--description">Розовый фильтр</p>
-                <p class="price-list__item  price-list__item--add  price-list__item--description">Смайлики</p>
-                <p class="price-list__item  price-list__item--not  price-list__item--description">Комментарии</p>
+                <p class="price-list__item  price-list__item--description">Розовый фильтр</p>
+                <p class="price-list__item  price-list__item--description">Смайлики</p>
+                <p class="price-list__item  price-list__item--description">Комментарии</p>
               </div>
             </div>
             <div class="cost__item  slider__item">
@@ -127,7 +129,7 @@
               </div>
               <div class="price-list">
                 <p class="price-list__item  price-list__item--add">Розовый фильтр</p>
-                <p class="price-list__item  price-list__item--add">Смайлики</p>
+                <p class="price-list__item  price-list__item--not">Смайлики</p>
                 <p class="price-list__item  price-list__item--not">Комментарии</p>
               </div>
             </div>
@@ -150,7 +152,7 @@
               <div class="price-list">
                 <p class="price-list__item  price-list__item--add">Розовый фильтр</p>
                 <p class="price-list__item  price-list__item--add">Смайлики</p>
-                <p class="price-list__item  price-list__item--not">Комментарии</p>
+                <p class="price-list__item  price-list__item--add">Комментарии</p>
               </div>
             </div>
           </div>
@@ -181,10 +183,10 @@
         </div>
       </div>
       <div class="maps">
-        <iframe src="https://api-maps.yandex.ua/frame/v1/-/CZxh4IjO"></iframe>
+<!--        <iframe src="https://api-maps.yandex.ua/frame/v1/-/CZxh4IjO"></iframe>-->
       </div>
       <div class="page-footer__copyright">
-        <a class="logo" href="index.html">
+        <a class="logo  logo--footer" href="index.html">
           <div class="logo__img">Pink</div>
         </a>
         <div class="social">

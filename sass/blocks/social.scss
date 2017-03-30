@@ -1,7 +1,7 @@
 .social {
   @include clearfix;
   float: left;
-  padding-left: 50px;
+  padding-left: 60px;
 }
 .social__link {
   display: block;
@@ -12,11 +12,26 @@
   float: left;
   margin-top: 40px;
   margin-right: 13px;
+  &--twitter {
+    background-image: url("../../img/icon-twitter.svg");
+    background-repeat: no-repeat;
+    background-position: 15px center;
+  }
+  &--facebook {
+    background-image: url("../../img/icon-facebook.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--youtube {
+    background-image: url("../../img/icon-youtube.svg");
+    background-repeat: no-repeat;
+    background-position: 18px center;
+  }
 }
 @media ($tablet-width) {
   .social {
     @include clearfix;
-    width: 300px;
+    padding-left: 40px;
   }
   .social__link {
     &:first-child {

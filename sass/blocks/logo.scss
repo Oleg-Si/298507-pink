@@ -3,9 +3,19 @@
   float: left;
   width: 150px;
   height: 40px;
+  margin-top: 21px;
+}
+@media ($tablet-width) {
+  .logo {
+    margin-top: 27px;
+    margin-left: 20px;
+    &--footer {
+      width: 150px;
+    }
+  }
 }
 @media ($desktop-width) {
   .logo {
-    display: block;
+
   }
 }

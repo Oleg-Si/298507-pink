@@ -23,7 +23,34 @@
 @media ($tablet-width) {
   .effect {
     display: block;
+    position: relative;
     margin-bottom: 30px;
+    &::before {
+      content: "";
+      width: 240px;
+      height: 280px;
+      background-image: url(../../img/icon-timer.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      left: 40px;
+      top: 58px;
+    }
+    &::after {
+      content: "24";
+      width: 204px;
+      height: 204px;
+      border: 15px solid #d22856;
+      border-radius: 50%;
+      position: absolute;
+      left: 58px;
+      top: 114px;
+      font-size: 96px;
+      font-weight: bold;
+      color: #d22856;
+      padding-top: 70px;
+      padding-left: 30px;
+    }
   }
   .effect__wrapper {
     padding-left: 330px;

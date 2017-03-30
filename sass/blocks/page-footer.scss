@@ -29,6 +29,7 @@
 }
 .page-footer__copyright {
   @include container;
+  @include clearfix;
   display: none;
 }
 .page-footer__title {
@@ -67,9 +68,7 @@
   }
   .page-footer__copyright {
     padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
+    display: block;
     min-height: 127px;
     }
   .contacts__item:nth-of-type(2) {

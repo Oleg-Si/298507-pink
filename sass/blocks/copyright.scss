@@ -9,14 +9,15 @@
 .copyright {
   width: 150px;
   float: left;
+  margin-left: 60px;
   p {
     @include font-normal;
     font-size: 14px;
     line-height: 18px;
     color: $font-main-color;
     text-align: left;
-    padding-left: 20px;
     margin-top: 56px;
+    padding-left: 22px;
   }
 }
 @media ($desktop-width) {
