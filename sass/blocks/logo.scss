@@ -8,14 +8,26 @@
 @media ($tablet-width) {
   .logo {
     margin-top: 27px;
-    margin-left: 20px;
+    margin-left: 21px;
     &--footer {
       width: 150px;
+      background-image: url("../../img/logo-pink-blue-mobile.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    img {
+      width: 145px;
     }
   }
 }
 @media ($desktop-width) {
   .logo {
+    margin-top: 28px;
+    margin-left: 1px;
 
+    &--footer {
+      margin-top: 70px;
+      margin-left: -2px;
+    }
   }
 }

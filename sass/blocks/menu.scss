@@ -34,12 +34,16 @@
       min-height: 70px;
     }
   }
+  &--no-js {
+    .burger {
+      display: none;
+    }
+  }
 }
 .menu__header {
   @include clearfix;
   display: block;
   background-color: #283645;
-  padding: 0 20px;
   min-height: 70px;
   border-bottom: 1px solid #000000;
   border-top: 0;
@@ -95,56 +99,40 @@
 }
 @media ($desktop-width) {
   .menu {
-    @include clearfix;
     &--closed {
-      .menu__header {
-        position: static;
-        width: 100%;
-        min-height: 110px;
-        padding-left: 110px;
-      }
       .menu__list {
         display: block;
-        float: left;
-        min-height: 110px;
-        margin-top: -110px;
-        margin-left: 166px;
-        padding-top: 45px;
+        margin: 0 auto;
+        background-color: transparent;
+        margin-top: -65px;
+        margin-left: 329px;
+      }
+      .menu__item {
+        display: inline-block;
+        border: none;
+        box-shadow: none;
+        @include font-normal;
+        font-size: 18px;
+        line-height: 18px;
+        text-transform: none;
+        padding: 0;
+        margin-right: 76px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      .menu__header {
+        padding-left: 10px;
+        background-color: transparent;
+        padding: 0;
+      }
+      .menu__wrapper {
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+      .menu__wrapper2 {
+        @include container;
+        margin: 0 auto;
       }
     }
-  }
-  .menu__header {
-    background-color: rgba(0, 0, 0, 0.3);
-    min-height: 0px;
-    border: none;
-    width: 100%;
-    padding: 0 0 0 10px;
-    min-height: 110px;
-  }
-  .menu__list {
-    background-color: rgba(0, 0, 0, 0.3);
-    float: left;
-    padding-right: 10px;
-    padding-left: 163px;
-    padding-top: 47px;
-    background-color: transparent;
-  }
-  .menu__item {
-    display: inline-block;
-    border: none;
-    box-shadow: none;
-    @include font-normal;
-    font-size: 18px;
-    line-height: 18px;
-    text-transform: none;
-    padding: 0;
-    margin-right: 76px;
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-  .menu__title {
-    margin-top: 22px;
-    width: 800px;
   }
 }

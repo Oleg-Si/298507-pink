@@ -42,21 +42,38 @@
       top: 206px;
       left: 47%;
     }
-  &::before {
-    height: 83px;
-    position: absolute;
-    background-size: cover;
-    background-position: center 0px;
-  }
-  @media ($retina),($retina2) {
-    background-image:  url("../../img/bg-map-mobile@2x.jpg");
-    background-size: 320px auto;
-  }
+    &::before {
+      height: 83px;
+      position: absolute;
+      background-size: cover;
+      background-position: center 0px;
+    }
+    @media ($retina),($retina2) {
+      background-image:  url("../../img/bg-map-tablet@2x.jpg");
+      background-size: 320px auto;
+    }
   }
 }
 @media ($desktop-width) {
   .maps {
     height: 503px;
+    background-image: url("../../img/bg-map-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -276px;
+    &::after {
+      top: 263px;
+      left: 48%;
+    }
+    &::before {
+      height: 103px;
+      position: absolute;
+      background-size: cover;
+      background-position: center 0px;
+    }
+    @media ($retina),($retina2) {
+      background-image:  url("../../img/bg-map-desktop@2x.jpg");
+      background-size: 320px auto;
+    }
   }
 }
 iframe {
@@ -64,7 +81,7 @@ iframe {
   width: 100%;
   height: 100%;
 }
-@media (min-width: 760px) {
+@media (min-width: 700px) {
   .maps {
     width: 100%;
   }

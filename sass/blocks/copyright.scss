@@ -9,7 +9,8 @@
 .copyright {
   width: 150px;
   float: left;
-  margin-left: 60px;
+  margin-left: 57px;
+  position: relative;
   p {
     @include font-normal;
     font-size: 14px;
@@ -19,14 +20,29 @@
     margin-top: 56px;
     padding-left: 22px;
   }
+  &::after {
+    content: "";
+    width: 40px;
+    height: 50px;
+    background-image: url("../../img/htmlacademy.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 43px;
+    right: -7px;
+    position: absolute;
+  }
 }
 @media ($desktop-width) {
   .copyright {
     padding-top: 35px;
-    padding-left: 0;
+    padding-left: 157px;
     p {
       font-size: 18px;
       padding-left: 0;
+    }
+    &::after {
+      top: 77px;
+      right: -160px;
     }
   }
   .page-footer__wrapper {

@@ -89,5 +89,17 @@
         min-height: 61px;
       }
     }
+    &--add {
+      &::after {
+        right: 98px;
+        top: 14px;
+      }
+    }
+    &--not {
+      &::after {
+        right: 98px;
+        top: 14px;
+      }
+    }
   }
 }
