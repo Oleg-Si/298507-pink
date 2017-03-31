@@ -21,13 +21,13 @@
   &--photo {
     width: 290px;
     padding-top: 32px;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
       p {
       @include font-normal;
     }
   }
   &--upload {
-    padding-top: 10px;
+    padding-top: 5px;
     padding-left: 18px;
     margin-bottom: 42px;
     p {
@@ -82,7 +82,7 @@
     }
     &--photo {
       width: 660px;
-      margin-bottom: 88px;
+      margin-bottom: 87px;
       p {
         width: 620px;
       }

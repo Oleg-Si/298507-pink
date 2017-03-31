@@ -86,5 +86,8 @@
   .promo__title {
     width: 800px;
     padding-top: 174px;
+    &--photo {
+      width: 500px;
+    }
   }
 }

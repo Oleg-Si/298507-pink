@@ -39,25 +39,4 @@
       margin-left: 32px;
     }
   }
-  .page-footer__copyright {
-    .social {
-      padding-left: 20px;
-      padding-top: 23px;
-      float: left;
-    }
-  }
-}
-@media ($desktop-width) {
-  .page-footer__copyright {
-    .social {
-      padding-top: 59px;
-      padding-left: 180px;
-    }
-  }
-  .page-footer__wrapper {
-    .social {
-      padding-top: 2px;
-      padding-left: 204px;
-    }
-  }
 }

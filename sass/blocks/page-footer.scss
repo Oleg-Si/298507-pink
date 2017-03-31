@@ -67,7 +67,21 @@
   .page-footer__copyright {
     min-height: 127px;
     display: block;
+    .logo {
+      margin-left: 18px;
     }
+    .social {
+      padding-left: 40px;
+      padding-top: 0px;
+      float: left;
+    }
+    .copyright {
+      padding-left: 0px;
+      a {
+        right: -8px;
+      }
+    }
+  }
   .contacts__item:nth-of-type(2) {
     b {
       padding-left: 40px;
@@ -86,9 +100,32 @@
   .contacts__item:nth-of-type(2) {
     order: 1;
   }
+  .page-footer__wrapper {
+    .social {
+      padding-top: 2px;
+      padding-left: 204px;
+    }
+  }
   .page-footer__copyright {
     padding: 0 10px;
     min-height: 200px;
+    .logo {
+      margin-left: 0px;
+      margin-top: 74px;
+    }
+    .social {
+      padding-left: 198px;
+      padding-top: 40px;
+      float: left;
+    }
+    .copyright {
+      padding-left: 157px;
+      padding-top: 38px;
+      a {
+        right: -160px;
+        top: 82px;
+      }
+    }
   }
   .page-footer__title {
     font-size: 50px;
