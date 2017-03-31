@@ -66,6 +66,7 @@
   background-color: #f2f2f2;
   padding-top: 37px;
   min-height: 340px;
+  margin-bottom: -2px;
   .form__title {
     width: 200px;
     margin: 0 auto;
@@ -89,6 +90,65 @@
     height: 39px;
     margin-top: 26px;
     margin-bottom: 17px;
+  }
+  input[type="checkbox"] {
+    display: none;
+    & + label {
+      position: relative;
+      margin-left: 43px;
+      margin-bottom: 23px;
+      &::before {
+        content: "";
+        width: 39px;
+        height: 39px;
+        background-color: #ffffff;
+        border: 2px solid #e5e5e5;
+        position: absolute;
+        top: 25px;
+        left: -43px;
+        margin-bottom: 17px;
+      }
+    }
+    &:checked {
+      & + label {
+        position: relative;
+        &::before {
+          background-image: url("../../img/icon-yes-form.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
+  input[type="radio"] {
+    display: none;
+    & + label {
+      position: relative;
+      margin-left: 43px;
+      margin-bottom: 20px;
+      &::before {
+        content: "";
+        width: 39px;
+        height: 39px;
+        background-color: #ffffff;
+        border: 2px solid #e5e5e5;
+        border-radius: 50%;
+        position: absolute;
+        top: 21px;
+        left: -43px;
+        margin-bottom: 17px;
+      }
+    }
+    &:checked {
+      & + label {
+        position: relative;
+        &::before {
+          background-image: url("../../img/icon-map-marker.svg");
+          background-repeat: no-repeat;
+          background-position: 0px top;
+        }
+      }
+    }
   }
   input[type="radio"] {
     margin-top: 20px;
@@ -146,7 +206,7 @@ textarea {
     color: #ffffff;
     border-radius: 2px;
     border: none;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 }
 .form__required {
@@ -468,10 +528,34 @@ textarea {
   }
   .form__block-contacts-item {
     margin-bottom: 0px;
+    position: relative;
     .form__text-input {
       width: 375px;
       &:last-child {
         margin-right: 30px;
+      }
+    }
+    &::after {
+      content: "";
+      width: 61px;
+      height: 61px;
+      background-color: #e5e5e5;
+      position: absolute;
+      right: 30px;
+      top: 0;
+    }
+    &:last-child {
+      &::after {
+        background-image: url("../../img/icon-mail.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    &:first-child {
+      &::after {
+        background-image: url("../../img/icon-phone.svg");
+        background-repeat: no-repeat;
+        background-position: center;
       }
     }
   }

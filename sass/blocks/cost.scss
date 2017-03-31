@@ -1,16 +1,17 @@
 .cost {
   background-color: #f2f2f2;
-  background-image: url("../../img/bg-triangle-white.svg");
-  background-repeat: no-repeat;
-  background-position: center -35px;
   min-height: 471px;
+  svg {
+    width: 100%;
+    height: auto;
+    margin-bottom: 59px;
+  }
 }
 .cost__wrapper {
   width: 320px;
   overflow: hidden;
   margin: 0 auto;
   padding: 0 20px;
-  padding-top: 91px;
 }
 .cost__item {
   text-align: center;
@@ -79,11 +80,14 @@
   .cost {
     min-height: 377px;
     background-position: center -19px;
+    svg {
+      margin-bottom: 0px;
+    }
   }
   .cost__wrapper {
     @include container;
     width: auto;
-    padding-top: 90px;
+    padding-top: 27px;
   }
   .cost__price {
     min-height: 79px;
@@ -131,7 +135,7 @@
 @media ($desktop-width) {
   .cost__wrapper {
     padding: 0 10px;
-    padding-top: 150px;
+    padding-top: 68px;
   }
   .cost {
     min-height: 525px;

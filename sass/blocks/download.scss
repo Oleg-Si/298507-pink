@@ -1,5 +1,5 @@
 .download {
-  max-height: 271px;
+  max-height: 274px;
   background-color: #1d2631;
   margin-bottom: 42px;
   h2 {
@@ -15,6 +15,7 @@
 .download__wrapper {
   @include container;
   padding: 20px;
+  padding-top: 23px;
   text-align: center;
 }
 .download__title {
@@ -52,7 +53,7 @@
 }
 @media ($tablet-width) {
   .download {
-    margin-top: -547px;
+    margin-top: -551px;
     margin-bottom: 328px;
     position: relative;
     padding-right: 330px;
@@ -92,8 +93,8 @@
 }
 @media ($desktop-width) {
   .download {
-    margin-top: -655px;
-    margin-bottom: 455px;
+    margin-top: -658px;
+    margin-bottom: 454px;
     padding-right: 650px;
   }
   .download__wrapper {

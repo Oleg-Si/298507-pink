@@ -1,7 +1,6 @@
 .social {
   @include clearfix;
-  float: left;
-  padding-left: 60px;
+  padding-left: 50px;
 }
 .social__link {
   display: block;
@@ -10,7 +9,7 @@
   border: 3px solid #e9ebec;
   border-radius: 50%;
   float: left;
-  margin-top: 40px;
+  margin-top: 16px;
   margin-right: 13px;
   &--twitter {
     background-image: url("../../img/icon-twitter.svg");
@@ -30,27 +29,35 @@
 }
 @media ($tablet-width) {
   .social {
-    @include clearfix;
+    display: block;
+    float: left;
     padding-left: 40px;
+    margin-top: 22px;
   }
   .social__link {
     &:first-child {
       margin-left: 32px;
     }
   }
+  .page-footer__copyright {
+    .social {
+      padding-left: 20px;
+      padding-top: 23px;
+      float: left;
+    }
+  }
 }
 @media ($desktop-width) {
   .page-footer__copyright {
     .social {
-      padding-top: 35px;
-      padding-left: 200px;
+      padding-top: 59px;
+      padding-left: 180px;
     }
   }
   .page-footer__wrapper {
     .social {
-      padding-top: 0;
-      width: 520px;
-      padding-left: 215px;
+      padding-top: 2px;
+      padding-left: 204px;
     }
   }
 }
