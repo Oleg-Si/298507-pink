@@ -34,6 +34,7 @@
   margin-bottom: 8px;
   margin-left: 37px;
   &--Apple {
+
     background-image: url("/img/logo-apple.svg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -45,7 +46,9 @@
     margin-left: 32px;
   }
   &--Windows {
+
     background-image: url("/img/logo-microsoft.svg");
+
     background-repeat: no-repeat;
     background-position: center 11px;
     margin-left: 33px;
