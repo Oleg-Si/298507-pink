@@ -23,14 +23,14 @@
   &:last-child {
     margin-right: 0;
     .upload__tool {
-      background-image: url("../../img/icon-editor-contrast.svg");
+      background-image: url("/img/icon-editor-contrast.svg");
       background-repeat: no-repeat;
       background-position: center;
     }
   }
   &:nth-of-type(2) {
     .upload__tool {
-      background-image: url("../../img/icon-editor-fill.svg");
+      background-image: url("/img/icon-editor-fill.svg");
       background-repeat: no-repeat;
       background-position: center 2px;
     }
@@ -39,7 +39,7 @@
     margin-left: 35px;
     .upload__tool {
       opacity: 1;
-      background-image: url("../../img/icon-editor-crop.svg");
+      background-image: url("/img/icon-editor-crop.svg");
       background-repeat: no-repeat;
       background-position: center;
     }
