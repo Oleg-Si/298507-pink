@@ -10,11 +10,11 @@
   position: relative;
   margin-right: -9px;
   outline: none;
-  background-image: url("../../img/icon-menu-cross.svg");
+  background-image: url("/img/icon-menu-cross.svg");
   background-repeat: no-repeat;
   background-position: center center;
   &--closed {
-    background-image: url("../../img/icon-menu-burger.svg");
+    background-image: url("/img/icon-menu-burger.svg");
     background-repeat: no-repeat;
     background-position: center center;
   }

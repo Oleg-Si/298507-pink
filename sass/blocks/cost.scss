@@ -26,7 +26,7 @@
         content: "";
         width: 75px;
         height: 75px;
-        background-image: url("../../img/bg-hit.svg");
+        background-image: url("/img/bg-hit.svg");
         background-repeat: no-repeat;
         position: absolute;
         top: 0;
@@ -116,7 +116,7 @@
     &:nth-of-type(3) {
       .cost__price {
         &::before {
-          background-image: url("../../img/bg-hit-tablet.svg");
+          background-image: url("/img/bg-hit-tablet.svg");
           left: 0;
         }
         &::after {
@@ -149,7 +149,7 @@
           content: "";
           width: 75px;
           height: 75px;
-          background-image: url("../../img/bg-hit.svg");
+          background-image: url("/img/bg-hit.svg");
           background-repeat: no-repeat;
           position: absolute;
           top: 0;
