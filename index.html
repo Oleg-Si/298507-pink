@@ -7,19 +7,21 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-    <header class="page-header  page-header--index">
-      <nav class="menu  menu--closed">
-        <div class="menu__header">
-          <div class="page-header__wrapper">
-            <a class="logo">
-              <div class="logo__img">Pink</div>
-            </a>
-            <button class="burger  burger--closed" type="button">
-              <span class="visually-hidden">Открыть/Закрыть</span>
-            </button>
+    <header class="page-header">
+      <nav class="menu  menu--index  menu--closed  menu--no-js">
+        <div class="menu__wrapper">
+          <div class="menu__header">
+            <div class="page-header__wrapper">
+              <a class="logo">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                  <source media="(min-width: 700px)" srcset="img/logo-pink-white-tablet.svg">
+                  <img src="img/logo-pink-white-mobile.svg" width="76" height="37" alt="Приложение Pink">
+                </picture>
+              </a>
+              <button class="burger  burger--closed" type="button"></button>
+            </div>
           </div>
-        </div>
-        <div class="page-header__wrapper">
           <ul class="menu__list">
             <li class="menu__item">
               <a>Главная</a>
@@ -39,14 +41,24 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Приложение "PINK"</h1>
+      <div class="promo">
+        <div class="promo__wrapper">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+            <!-- Картинка руки с телефоном для десктопа 1050px, а размер макета 960px, если поставить десктопную, будет вылазить за макет-->
+            <source media="(min-width: 700px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+            <img src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" width="258" height="286" alt="Приложение Pink">
+          </picture>
+        </div>
+      </div>
       <div class="download">
         <div class="download__wrapper">
           <h2 class="visually-none">Взгляните на жизнь иначе!</h2>
           <a class="button  button--download" href="#">Скачать приложение</a>
           <div class="download__link">
-            <a class="download__item" href="#">Apple</a>
-            <a class="download__item" href="#">Android</a>
-            <a class="download__item" href="#">Windows</a>
+            <a class="download__item  download__item--Apple" href="#"><span class="visually-hidden">Apple</span></a>
+            <a class="download__item  download__item--Android" href="#"><span class="visually-hidden">Android</span></a>
+            <a class="download__item  download__item--Windows" href="#"><span class="visually-hidden">Windows</span></a>
           </div>
           <p class="download__title">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
@@ -56,6 +68,9 @@
         <p>Нам есть, что вам  предложить!</p>
       </div>
       <section class="features">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1200px" height="94.074px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve" preserveAspectRatio="none">
+        <polygon fill="#ffffff" points="1200,0 0,0 0,94.074 "/>
+        </svg>
         <div class="features__wrapper">
           <h2 class="visually-hidden">Польза от использования</h2>
           <div class="features__item">
@@ -82,8 +97,8 @@
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="reviews__wrapper">
-          <a class="reviews__next-page">1</a>
-          <a class="reviews__prev-page">2</a>
+          <a class="reviews__prev-page"><span class="visually-hidden">Назад</span></a>
+          <a class="reviews__next-page"><span class="visually-hidden">Вперед</span></a>
           <div class="reviews__items">
             <blockquote class="reviews__item">
               <cite class="reviews__author-name">Николай Петров</cite>
@@ -109,15 +124,18 @@
         </div>
       </section>
       <section class="cost">
+        <svg version="1.0" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1200px" height="94.074px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve" preserveAspectRatio="none">
+        <polygon fill="#ffffff" points="1200,0 0,0 0,94.074 "/>
+        </svg>
         <h2 class="visually-hidden">Прайс-лист</h2>
         <div class="cost__wrapper">
           <div class="slider">
             <div class="cost__item  slider__item  cost__item--description">
               <div class="cost__price cost__price--description"></div>
               <div class="price-list">
-                <p class="price-list__item  price-list__item--add  price-list__item--description">Розовый фильтр</p>
-                <p class="price-list__item  price-list__item--add  price-list__item--description">Смайлики</p>
-                <p class="price-list__item  price-list__item--not  price-list__item--description">Комментарии</p>
+                <p class="price-list__item  price-list__item--description">Розовый фильтр</p>
+                <p class="price-list__item  price-list__item--description">Смайлики</p>
+                <p class="price-list__item  price-list__item--description">Комментарии</p>
               </div>
             </div>
             <div class="cost__item  slider__item">
@@ -127,7 +145,7 @@
               </div>
               <div class="price-list">
                 <p class="price-list__item  price-list__item--add">Розовый фильтр</p>
-                <p class="price-list__item  price-list__item--add">Смайлики</p>
+                <p class="price-list__item  price-list__item--not">Смайлики</p>
                 <p class="price-list__item  price-list__item--not">Комментарии</p>
               </div>
             </div>
@@ -150,7 +168,7 @@
               <div class="price-list">
                 <p class="price-list__item  price-list__item--add">Розовый фильтр</p>
                 <p class="price-list__item  price-list__item--add">Смайлики</p>
-                <p class="price-list__item  price-list__item--not">Комментарии</p>
+                <p class="price-list__item  price-list__item--add">Комментарии</p>
               </div>
             </div>
           </div>
@@ -181,12 +199,13 @@
         </div>
       </div>
       <div class="maps">
+        <svg version="1.0" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.28px" height="61.905px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" preserveAspectRatio="none">
+        <polygon fill="#ffffff" points="297.64,61.905 0,0 595.28,0 "/>
+        </svg>
         <iframe src="https://api-maps.yandex.ua/frame/v1/-/CZxh4IjO"></iframe>
       </div>
       <div class="page-footer__copyright">
-        <a class="logo" href="index.html">
-          <div class="logo__img">Pink</div>
-        </a>
+        <a class="logo  logo--footer" href="index.html"></a>
         <div class="social">
           <a class="social__link  social__link--twitter" href="https://twitter.com/"><span class="visually-hidden">Твиттер</span></a>
           <a class="social__link  social__link--facebook" href="https://www.facebook.com/"><span class="visually-hidden">Фейсбук</span></a>
@@ -194,7 +213,7 @@
         </div>
         <div class="copyright">
           <p>Разработано</p>
-          <a href="https://htmlacademy.ru/"><span class="visually-hidden">Htmlacademy</span></a>
+          <a href="https://htmlacademy.ru/"></a>
         </div>
       </div>
     </footer>

@@ -18,7 +18,33 @@
   text-align: left;
   padding-left: 21px;
   background-color: #ffffff;
-
+  position: relative;
+  &--add {
+    &::after {
+      content: "";
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      right: 14px;
+      top: 12px;
+      background-image: url("../img/icon-yes.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  &--not {
+    &::after {
+      content: "";
+      width: 35px;
+      height: 32px;
+      position: absolute;
+      right: 15px;
+      top: 12px;
+      background-image: url("../img/icon-no.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
 }
 @media ($tablet-width) {
   .price-list__item {
@@ -36,6 +62,18 @@
         min-height: 48px;
       }
     }
+    &--add {
+      &::after {
+        right: 58px;
+        top: 6px;
+      }
+    }
+    &--not {
+      &::after {
+        right: 58px;
+        top: 6px;
+      }
+    }
   }
 }
 @media ($desktop-width) {
@@ -49,6 +87,18 @@
       min-height: 60px;
       &:first-child {
         min-height: 61px;
+      }
+    }
+    &--add {
+      &::after {
+        right: 98px;
+        top: 14px;
+      }
+    }
+    &--not {
+      &::after {
+        right: 98px;
+        top: 14px;
       }
     }
   }

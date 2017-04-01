@@ -3,9 +3,40 @@
   float: left;
   width: 150px;
   height: 40px;
+  margin-top: 22px;
+  margin-left: 0px;
+  &--footer {
+    width: 150px;
+    background-image: url("../img/logo-pink-blue-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 64px;
+  }
+}
+@media ($tablet-width) {
+  .logo {
+    margin-top: 27px;
+    margin-left: 21px;
+    &--footer {
+      margin-top: 36px;
+      margin-left: -2px;
+      float: left;
+    }
+    img {
+      width: 145px;
+    }
+  }
 }
 @media ($desktop-width) {
   .logo {
-    display: block;
+    margin-top: 28px;
+    margin-left: 1px;
+    &--footer {
+      margin-top: 36px;
+      margin-left: -2px;
+      background-image: url("../img/logo-pink-blue-desktop.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 }

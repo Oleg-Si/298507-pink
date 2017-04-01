@@ -7,19 +7,21 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-    <header class="page-header  page-header--form">
-      <nav class="menu  menu--closed  menu--form">
-        <div class="menu__header">
-          <div class="page-header__wrapper">
-            <a class="logo">
-              <div class="logo__img">Pink</div>
-            </a>
-            <button class="burger  burger--closed" type="button">
-              <span class="visually-hidden">Открыть/Закрыть</span>
-            </button>
+    <header class="page-header">
+      <nav class="menu  menu--index  menu--closed  menu--no-js">
+        <div class="menu__wrapper">
+          <div class="menu__header">
+            <div class="page-header__wrapper">
+              <a class="logo">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                  <source media="(min-width: 700px)" srcset="img/logo-pink-white-tablet.svg">
+                  <img src="img/logo-pink-white-mobile.svg" width="76" height="37" alt="Приложение Pink">
+                </picture>
+              </a>
+              <button class="burger  burger--closed" type="button"></button>
+            </div>
           </div>
-        </div>
-        <div class="page-header__wrapper">
           <ul class="menu__list">
             <li class="menu__item">
               <a href="index.html">Главная</a>
@@ -35,10 +37,12 @@
             </li>
           </ul>
         </div>
-        <p class="menu__title">Конкурс на самое безбашенное путешествие с Пинк</p>
       </nav>
     </header>
     <main class="page-main">
+      <div class="promo  promo--form">
+        <p class="promo__title">Конкурс на самое безбашенное путешествие с Пинк</p>
+      </div>
       <div class="description  description--form">
         <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="visually-none">Пожалуйста, заполните форму ниже:</span></p>
       </div>
@@ -142,9 +146,7 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="logo  logo--footer" href="index.html">
-          <div class="logo__img">Pink</div>
-        </a>
+        <a class="logo  logo--footer" href="index.html"></a>
         <div class="social">
           <a class="social__link  social__link--twitter" href="https://twitter.com/"><span class="visually-hidden">Твиттер</span></a>
           <a class="social__link  social__link--facebook" href="https://www.facebook.com/"><span class="visually-hidden">Фейсбук</span></a>
@@ -152,7 +154,7 @@
         </div>
         <div class="copyright">
           <p>Разработано</p>
-          <a href="https://htmlacademy.ru/"><span class="visually-hidden">Htmlacademy</span></a>
+          <a href="https://htmlacademy.ru/"></a>
         </div>
       </div>
     </footer>

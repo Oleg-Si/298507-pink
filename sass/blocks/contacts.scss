@@ -1,5 +1,5 @@
 .contacts {
-  min-height: 265px;
+  min-height: 292px;
 }
 
 @media ($tablet-width) {
@@ -19,7 +19,7 @@
 }
 @media ($desktop-width) {
   .contacts {
-    min-height: 140px;
+    min-height: 152px;
   }
   .contacts__item {
     &:nth-of-type(2) {

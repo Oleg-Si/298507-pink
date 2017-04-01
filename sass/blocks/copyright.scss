@@ -8,30 +8,49 @@
 }
 .copyright {
   width: 150px;
-  float: left;
+  margin-left: 57px;
+  position: relative;
   p {
     @include font-normal;
     font-size: 14px;
     line-height: 18px;
     color: $font-main-color;
     text-align: left;
-    padding-left: 20px;
     margin-top: 56px;
+    padding-left: 22px;
+  }
+  a {
+    width: 40px;
+    height: 50px;
+    background-image: url("../img/htmlacademy.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 9px;
+    right: -7px;
+    position: absolute;
+  }
+}
+@media ($tablet-width) {
+  .copyright {
+    float: left;
+    padding-left: 40px;
+    a {
+      top: 41px;
+      right: -64px;
+    }
   }
 }
 @media ($desktop-width) {
   .copyright {
-    padding-top: 35px;
-    padding-left: 0;
+    padding-top: 0px;
+    padding-left: 170px;
     p {
       font-size: 18px;
       padding-left: 0;
     }
-  }
-  .page-footer__wrapper {
-    .copyright {
-      padding-top: 0px;
-      padding-left: 68px;
+    a {
+      top: 43px;
+      right: -200px;
     }
   }
 }

@@ -7,19 +7,21 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-    <header class="page-header  page-header--photo">
-      <nav class="menu  menu--closed  menu--photo">
-        <div class="menu__header">
-          <div class="page-header__wrapper">
-            <a class="logo">
-              <div class="logo__img">Pink</div>
-            </a>
-            <button class="burger  burger--closed" type="button">
-              <span class="visually-hidden">Открыть/Закрыть</span>
-            </button>
+    <header class="page-header">
+      <nav class="menu  menu--index  menu--closed  menu--no-js">
+        <div class="menu__wrapper">
+          <div class="menu__header">
+            <div class="page-header__wrapper">
+              <a class="logo">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                  <source media="(min-width: 700px)" srcset="img/logo-pink-white-tablet.svg">
+                  <img src="img/logo-pink-white-mobile.svg" width="76" height="37" alt="Приложение Pink">
+                </picture>
+              </a>
+              <button class="burger  burger--closed" type="button"></button>
+            </div>
           </div>
-        </div>
-        <div class="page-header__wrapper">
           <ul class="menu__list">
             <li class="menu__item">
               <a href="index.html">Главная</a>
@@ -35,22 +37,28 @@
             </li>
           </ul>
         </div>
-        <p class="menu__title">Фотографии пользователей</p>
       </nav>
     </header>
     <main class="page-main">
+      <div class="promo  promo--form">
+        <p class="promo__title  promo__title--photo">Фотографии пользователей</p>
+      </div>
       <div class="description  description--photo">
         <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает Ваших?</p>
       </div>
       <div class="main-photo">
         <a href="#">
-          <img src="img/panorama-mobile@1x.jpg" alt="Панорама дня" width="320" height="137">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 700px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня" width="320" height="137">
+          </picture>
         </a>
         <div class="main-photo__description">
           <div class="main-photo__wrapper">
             <p class="photo__user-name">Анна <span class="photo__publication-time">(5 минут назад)</span></p>
             <p class="photo__user-post">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <p class="photo__like">Нравится: <span class="photo__like-counter">215</span></p>
+            <p class="photo__like  photo__like--main">Нравится: <span class="photo__like-counter">215</span></p>
           </div>
         </div>
       </div>
@@ -61,7 +69,11 @@
             <div class="photo__item">
               <div class="photo__img">
                 <a href="#">
-                  <img src="img/photo-1-mobile@1x.jpg" alt="Автомтобиль" width="280" height="180">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 700px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                    <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Автомтобиль" width="280" height="180">
+                  </picture>
                 </a>
               </div>
               <div class="photo__description">
@@ -73,7 +85,11 @@
             <div class="photo__item">
               <div class="photo__img">
                 <a href="#">
-                  <img src="img/photo-2-mobile@1x.jpg" alt="Барабанная установка" width="280" height="180">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                    <source media="(min-width: 700px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                    <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Автомтобиль" width="280" height="180">
+                  </picture>
                 </a>
               </div>
               <div class="photo__description">
@@ -85,7 +101,11 @@
             <div class="photo__item">
               <div class="photo__img">
                 <a href="#">
-                  <img src="img/photo-3-mobile@1x.jpg" alt="Стеклянный потолок" width="280" height="180">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                    <source media="(min-width: 700px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                    <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Автомтобиль" width="280" height="180">
+                  </picture>
                 </a>
               </div>
               <div class="photo__description">
@@ -97,7 +117,11 @@
             <div class="photo__item">
               <div class="photo__img">
                 <a href="#">
-                  <img src="img/photo-4-mobile@1x.jpg" alt="Рынок" width="280" height="180">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                    <source media="(min-width: 700px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                    <img src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Автомтобиль" width="280" height="180">
+                  </picture>
                 </a>
               </div>
               <div class="photo__description">
@@ -109,7 +133,11 @@
             <div class="photo__item">
               <div class="photo__img">
                 <a href="#">
-                  <img src="img/photo-5-mobile@1x.jpg" alt="В горах" width="280" height="180">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-5-desktop@1x.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+                    <source media="(min-width: 700px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+                    <img src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Автомтобиль" width="280" height="180">
+                  </picture>
                 </a>
               </div>
               <div class="photo__description">
@@ -121,7 +149,11 @@
             <div class="photo__item">
               <div class="photo__img">
                 <a href="#">
-                  <img src="img/photo-6-mobile@1x.jpg" alt="Вид из окна самолета" width="280" height="180">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+                    <source media="(min-width: 700px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+                    <img src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Автомтобиль" width="280" height="180">
+                  </picture>
                 </a>
               </div>
               <div class="photo__description">
@@ -173,11 +205,9 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer  page-footer--photo">
+    <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="logo  logo--footer" href="index.html">
-          <div class="logo__img">Pink</div>
-        </a>
+        <a class="logo  logo--footer" href="index.html"></a>
         <div class="social">
           <a class="social__link  social__link--twitter" href="https://twitter.com/"><span class="visually-hidden">Твиттер</span></a>
           <a class="social__link  social__link--facebook" href="https://www.facebook.com/"><span class="visually-hidden">Фейсбук</span></a>
@@ -185,7 +215,7 @@
         </div>
         <div class="copyright">
           <p>Разработано</p>
-          <a href="https://htmlacademy.ru/"><span class="visually-hidden">Htmlacademy</span></a>
+          <a href="https://htmlacademy.ru/"></a>
         </div>
       </div>
     </footer>

@@ -18,27 +18,32 @@
     text-align: center;
     border: 3px solid #d22856;
     margin-bottom: 12px;
+    margin-left: -2px;
   }
   &--cancel {
     color: $font-main-color;
     text-align: center;
     border: 3px solid #283645;
     opacity: 0.1;
+    margin-left: -2px;
   }
 }
 @media ($tablet-width) {
   .button {
     width: 300px;
     margin-left: -15px;
+    &--download {
+      margin-bottom: 46px;
+    }
     &--post {
       margin-top: 67px;
       width: 260px;
-      margin-left: 25px;
+      margin-left: 26px;
       margin-bottom: 25px;
     }
     &--cancel {
       width: 260px;
-      margin-left: 25px;
+      margin-left: 26px;
     }
   }
 }
@@ -47,13 +52,17 @@
     font-size: 18px;
     &--post {
       width: 183px;
-      margin-top: 135px;
+      margin-top: 139px;
       margin-left: 27px;
     }
     &--cancel {
       width: 180px;
-      margin-top: 135px;
+      margin-top: 139px;
       margin-left: 0;
+    }
+    &--download {
+      font-size: 21px;
+      margin-bottom: 67px;
     }
   }
 }
