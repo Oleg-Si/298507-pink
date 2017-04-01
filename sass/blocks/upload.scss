@@ -26,6 +26,12 @@
       background-image: url("/img/icon-editor-contrast.svg");
       background-repeat: no-repeat;
       background-position: center;
+      &:hover {
+        background-image: url("/img/icon-editor-contrast-hover.svg");
+      }
+      &:active {
+        background-image: url("/img/icon-editor-contrast-active.svg");
+      }
     }
   }
   &:nth-of-type(2) {
@@ -33,15 +39,31 @@
       background-image: url("/img/icon-editor-fill.svg");
       background-repeat: no-repeat;
       background-position: center 2px;
+      &:hover {
+        background-image: url("/img/icon-editor-fill-hover.svg");
+      }
+      &:active {
+        background-image: url("/img/icon-editor-fill-active.svg");
+      }
     }
   }
   &:first-child {
     margin-left: 35px;
     .upload__tool {
-      opacity: 1;
       background-image: url("/img/icon-editor-crop.svg");
       background-repeat: no-repeat;
       background-position: center;
+      &:hover {
+        background-image: url("/img/icon-editor-crop-hover.svg");
+      }
+      &:active {
+        background-image: url("/img/icon-editor-crop-active.svg");
+      }
+    }
+  }
+  &--active {
+    .upload__tool {
+      background-image: url("/img/icon-editor-contrast-active.svg");
     }
   }
 }
@@ -54,7 +76,6 @@
   height: 48px;
   border: none;
   background-color: transparent;
-  opacity: 0.3;
 }
 .upload__photo {
   margin-bottom: 13px;
@@ -68,6 +89,9 @@
   position: absolute;
   top: -6px;
   left: 195px;
+  &:hover {
+    background-color: #d22856;
+  }
 }
 .upload__tools {
   display: flex;

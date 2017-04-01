@@ -5,12 +5,32 @@
   height: 40px;
   margin-top: 22px;
   margin-left: 0px;
+  &:hover {
+      background-image: url("/img/logo-pink-white-mobile-hover.svg");
+      background-repeat: no-repeat;
+      background-position: 1px 0px;
+    img {
+      display: none;
+    }
+  }
+  &:active {
+    opacity: 0.3;
+    img {
+      display: block;
+    }
+  }
   &--footer {
     width: 150px;
     background-image: url("/img/logo-pink-blue-mobile.svg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left top;
     margin-left: 64px;
+    &:hover {
+      background-image: url("/img/logo-pink-blue-mobile-hover.svg");
+    }
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 @media ($tablet-width) {
@@ -25,18 +45,49 @@
     img {
       width: 145px;
     }
+    &:hover {
+      background-image: url("/img/logo-pink-white-tablet-hover.svg");
+      background-repeat: no-repeat;
+      background-position: 0px 0px;
+      img {
+        display: none;
+      }
+    }
+    &:active {
+      opacity: 0.3;
+      img {
+        display: block;
+      }
+    }
   }
 }
 @media ($desktop-width) {
   .logo {
     margin-top: 28px;
     margin-left: 1px;
+    &:hover {
+      background-image: url("/img/logo-pink-white-desktop-hover.svg");
+      background-repeat: no-repeat;
+      background-position: 0px 0px;
+      img {
+        display: none;
+      }
+    }
+    &:active {
+      opacity: 0.3;
+      img {
+        display: block;
+      }
+    }
     &--footer {
       margin-top: 36px;
       margin-left: -2px;
       background-image: url("/img/logo-pink-blue-desktop.svg");
       background-repeat: no-repeat;
       background-position: center;
+      &:hover {
+        background-image: url("/img/logo-pink-blue-desktop.svg");
+      }
     }
   }
 }

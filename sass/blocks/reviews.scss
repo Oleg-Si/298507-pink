@@ -105,6 +105,12 @@
     left: -20px;
     top: 210px;
     cursor: pointer;
+    &:hover {
+      background-image: url("/img/icon-review-arrow-left-hover.svg");
+    }
+    &:active {
+      background-image: url("/img/icon-review-arrow-left-active.svg");
+    }
   }
   .reviews__next-page {
     display: block;
@@ -117,5 +123,11 @@
     right: -20px;
     top: 210px;
     cursor: pointer;
+    &:hover {
+      background-image: url("/img/icon-review-arrow-right-hover.svg");
+    }
+    &:active {
+      background-image: url("/img/icon-review-arrow-right-active.svg");
+    }
   }
 }

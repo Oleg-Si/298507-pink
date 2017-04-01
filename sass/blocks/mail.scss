@@ -1,0 +1,14 @@
+.mail {
+  &:hover {
+    color: #283645;
+    border-bottom: 1px solid #283645;
+    width: 245px;
+    height: 25px;
+    margin: 0 auto;
+    margin-bottom: 22px;
+  }
+  &:active {
+    opacity: 0.3;
+    border-bottom: none;
+  }
+}

@@ -52,6 +52,10 @@
   min-height: 63px;
   border: 2px solid #e5e5e5;
   padding-left: 20px;
+  outline-color: #d22856;
+  &:hover {
+    border: 2px solid #283645;
+  }
 }
 .form__block-features {
   background-color: #f2f2f2;
@@ -108,6 +112,16 @@
         left: -43px;
         margin-bottom: 17px;
       }
+      &:hover {
+        &::before {
+          border: 2px solid #283645;
+        }
+      }
+      &:active {
+        &::before {
+          border: 2px solid #d22856;
+        }
+      }
     }
     &:checked {
       & + label {
@@ -137,6 +151,16 @@
         top: 21px;
         left: -43px;
         margin-bottom: 17px;
+      }
+      &:hover {
+        &::before {
+          border: 2px solid #283645;
+        }
+      }
+      &:active {
+        &::before {
+          border: 2px solid #d22856;
+        }
       }
     }
     &:checked {
@@ -191,6 +215,13 @@ textarea {
   padding-top: 14px;
   border: 2px solid #e5e5e5;
   resize: none;
+  outline-color: #d22856;
+  &:hover {
+    border: 2px solid #283645;
+  }
+  &:active {
+    border: 2px solid #d22856;
+  }
 }
 .form__send {
   @include container;
@@ -207,6 +238,15 @@ textarea {
     border-radius: 2px;
     border: none;
     margin-bottom: 22px;
+    &:hover {
+      background-color: #1c9b5e;
+    }
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+    &:disabled {
+      background-color: #e5e5e5;
+    }
   }
 }
 .form__required {
@@ -223,7 +263,6 @@ textarea {
   .form__block-name {
     flex-grow: 1;
     order: -4;
-    @iclude clearfix;
     margin: 0 auto;
   }
   .form__block-features {

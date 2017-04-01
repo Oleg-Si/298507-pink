@@ -28,6 +28,13 @@
     top: 9px;
     right: -7px;
     position: absolute;
+    &:hover {
+      background-image: url("/img/htmlacademy-hover.svg");
+    }
+    &:active {
+      background-image: url("/img/htmlacademy-hover.svg");
+      opacity: 0.3;
+    }
   }
 }
 @media ($tablet-width) {
