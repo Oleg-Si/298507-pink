@@ -22,17 +22,17 @@
   a {
     width: 40px;
     height: 50px;
-    background-image: url("/img/htmlacademy.svg");
+    background-image: url("../img/htmlacademy.svg");
     background-repeat: no-repeat;
     background-position: center;
     top: 9px;
     right: -7px;
     position: absolute;
     &:hover {
-      background-image: url("/img/htmlacademy-hover.svg");
+      background-image: url("../img/htmlacademy-hover.svg");
     }
     &:active {
-      background-image: url("/img/htmlacademy-hover.svg");
+      background-image: url("../img/htmlacademy-hover.svg");
       opacity: 0.3;
     }
   }

@@ -1,11 +1,11 @@
 .promo {
   min-height: 462px;
   background-color: #1d2631;
-  background-image: url("/img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   @media ($retina),($retina2) {
-    background-image: url("/img/bg-back-mobile@2x.jpg");
+    background-image: url("../img/bg-back-mobile@2x.jpg");
     background-size: 700px auto;
   }
   &--form {
@@ -36,11 +36,11 @@
   .promo {
     min-height: 730px;
     background-color: #1d2631;
-    background-image: url("/img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center top;
     @media ($retina),($retina2) {
-      background-image: url("/img/bg-back-tablet@2x.jpg");
+      background-image: url("../img/bg-back-tablet@2x.jpg");
       background-size: 1200px auto;
     }
     &--form {
@@ -66,11 +66,11 @@
   .promo {
     min-height: 853px;
     background-color: #1d2631;
-    background-image: url("/img/bg-back-desktop@1x.jpg");
+    background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: center top;
     @media ($retina),($retina2) {
-      background-image: url("/img/bg-back-desktop@2x.jpg");
+      background-image: url("../img/bg-back-desktop@2x.jpg");
       background-size: cover;
     }
     &--form {

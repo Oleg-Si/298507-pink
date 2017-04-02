@@ -6,7 +6,7 @@
   margin-top: 22px;
   margin-left: 0px;
   &:hover {
-      background-image: url("/img/logo-pink-white-mobile-hover.svg");
+      background-image: url("../img/logo-pink-white-mobile-hover.svg");
       background-repeat: no-repeat;
       background-position: 1px 0px;
     img {
@@ -21,12 +21,12 @@
   }
   &--footer {
     width: 150px;
-    background-image: url("/img/logo-pink-blue-mobile.svg");
+    background-image: url("../img/logo-pink-blue-mobile.svg");
     background-repeat: no-repeat;
     background-position: left top;
     margin-left: 64px;
     &:hover {
-      background-image: url("/img/logo-pink-blue-mobile-hover.svg");
+      background-image: url("../img/logo-pink-blue-mobile-hover.svg");
     }
     &:active {
       opacity: 0.3;
@@ -46,7 +46,7 @@
       width: 145px;
     }
     &:hover {
-      background-image: url("/img/logo-pink-white-tablet-hover.svg");
+      background-image: url("../img/logo-pink-white-tablet-hover.svg");
       background-repeat: no-repeat;
       background-position: 0px 0px;
       img {
@@ -66,7 +66,7 @@
     margin-top: 28px;
     margin-left: 1px;
     &:hover {
-      background-image: url("/img/logo-pink-white-desktop-hover.svg");
+      background-image: url("../img/logo-pink-white-desktop-hover.svg");
       background-repeat: no-repeat;
       background-position: 0px 0px;
       img {
@@ -82,10 +82,10 @@
     &--footer {
       margin-top: 36px;
       margin-left: -2px;
-      background-image: url("/img/logo-pink-blue-desktop.svg");
+      background-image: url("../img/logo-pink-blue-desktop.svg");
       background-repeat: no-repeat;
       &:hover {
-        background-image: url("/img/logo-pink-blue-desktop.svg");
+        background-image: url("../img/logo-pink-blue-desktop.svg");
       }
     }
   }

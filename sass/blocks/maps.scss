@@ -1,6 +1,6 @@
 .maps {
   height: 200px;
-  background-image: url("/img/bg-map-mobile@1x.png");
+  background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center bottom;
   position: relative;
@@ -11,13 +11,13 @@
     position: absolute;
     top: 92px;
     left: 140px;
-    background-image: url("/img/icon-map-marker.svg");
+    background-image: url("../img/icon-map-marker.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
   @media ($retina),($retina2) {
 
-    background-image:  url("/img/bg-map-mobile@2x.jpg");
+    background-image:  url("../img/bg-map-mobile@2x.jpg");
     background-size: 320px auto;
   }
   svg {
@@ -38,7 +38,7 @@ iframe {
     height: 378px;
     margin-top: 10px;
 
-    background-image: url("/img/bg-map-tablet@1x.jpg");
+    background-image: url("../img/bg-map-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center -342px;
     &::after {
@@ -46,7 +46,7 @@ iframe {
       left: 47%;
     }
     @media ($retina),($retina2) {
-      background-image:  url("/img/bg-map-tablet@2x.jpg");
+      background-image:  url("../img/bg-map-tablet@2x.jpg");
       background-size: 700px auto;
     }
   }
@@ -57,7 +57,7 @@ iframe {
 @media ($desktop-width) {
   .maps {
     height: 480px;
-    background-image: url("/img/bg-map-desktop@1x.jpg");
+    background-image: url("../img/bg-map-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: center -298px;
     &::after {
@@ -65,7 +65,7 @@ iframe {
       left: 48%;
     }
     @media ($retina),($retina2) {
-      background-image:  url("/img/bg-map-desktop@2x.jpg");
+      background-image:  url("../img/bg-map-desktop@2x.jpg");
       background-size: 1200px auto;
     }
     svg {
