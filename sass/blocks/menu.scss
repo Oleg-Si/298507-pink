@@ -87,14 +87,12 @@
         &:last-child {
           margin-right: 0;
         }
-        &--active {
-          a {
-            border-bottom: 2px solid #ffffff;
-            display: block;
-            height: 30px;
-            &:hover {
-              border-bottom: 2px solid #d22854;
-            }
+        &--active a {
+          border-bottom: 2px solid #ffffff;
+          display: block;
+          height: 30px;
+          &:hover {
+            border-bottom: 2px solid #d22854;
           }
         }
       }

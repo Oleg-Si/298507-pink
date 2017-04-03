@@ -576,12 +576,12 @@ textarea {
     }
     &::after {
       content: "";
-      width: 61px;
-      height: 61px;
+      width: 59px;
+      height: 59px;
       background-color: #e5e5e5;
       position: absolute;
-      right: 30px;
-      top: 0;
+      right: 32px;
+      top: 2px;
     }
     &:last-child {
       &::after {
