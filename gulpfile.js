@@ -22,10 +22,7 @@ gulp.task("style", function() {
     .pipe(postcss([
       autoprefixer({browsers: [
         "last 2 versions"
-      ]}),
-      mqpacker({
-        sort: true
-      })
+      ]})
     ]))
     .pipe(gulp.dest("css"))
     .pipe(minify())
@@ -34,9 +31,9 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
-gulp.task("serve", ["style"], function() {
+gulp.task("serve", function() {
   server.init({
-    server: ".",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
@@ -44,7 +41,7 @@ gulp.task("serve", ["style"], function() {
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
+  gulp.watch("*.html", ["html:update"]);
 });
 
 gulp.task("images", function() {
@@ -64,7 +61,7 @@ gulp.task("symbols", function() {
     }))
     .pipe(rename("symbols.svg"))
     .pipe(gulp.dest("build/img"));
-})
+});
 
 gulp.task("build", function(fn){
   run("style", "images", "symbols", fn);
@@ -84,6 +81,16 @@ gulp.task("copy", function() {
 
 gulp.task("clean", function() {
   return del("build");
+});
+
+gulp.task("html:copy", function() {
+  return gulp.src("*.html")
+    .pipe(gulp.dest("build"));
+});
+
+gulp.task("html:update", ["html:copy"], function(done) {
+  server.reload();
+  done();
 });
 
 gulp.task("build", function(fn) {
