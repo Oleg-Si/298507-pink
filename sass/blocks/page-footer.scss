@@ -88,6 +88,11 @@
     }
     .mail {
       padding-left: 40px;
+      &:hover {
+        height: 25px;
+        padding-left: 0;
+        margin-left: 47.5px;
+      }
     }
   }
   .page-footer--photo {

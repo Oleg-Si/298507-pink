@@ -26,6 +26,12 @@
     background-repeat: no-repeat;
     background-position: 18px center;
   }
+  &:hover {
+    border: 3px solid #283645;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 @media ($tablet-width) {
   .social {

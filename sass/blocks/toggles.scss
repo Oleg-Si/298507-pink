@@ -19,6 +19,12 @@
     height: 12px;
     background-color: #ffffff;
   }
+  &:hover {
+    background-color: #7e868f;
+  }
+  &:active {
+    background-color: #e9ebec;
+  }
 }
 @media ($tablet-width) {
   .toggles__item {

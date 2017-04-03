@@ -17,6 +17,9 @@
     p {
       @include font-normal;
     }
+    span {
+      color: $font-main-color;
+    }
   }
   &--photo {
     width: 290px;
