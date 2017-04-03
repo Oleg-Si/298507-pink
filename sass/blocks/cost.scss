@@ -187,7 +187,9 @@
   .cost__price-item {
     font-size: 24px;
   }
-  .cost__item--description .cost__price {
-    min-height: 97px;
+  .cost__item--description {
+    .cost__price {
+      min-height: 97px;
+    }
   }
 }

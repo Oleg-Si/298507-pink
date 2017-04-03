@@ -58,10 +58,10 @@
     display: block;
     .copyright {
       margin-left: 0;
-      p {
-        margin-top: 55px;
-        padding-left: 40px;
-      }
+    }
+    .copyright__title {
+      margin-top: 55px;
+      padding-left: 40px;
     }
     &--form {
       padding-bottom: 35px;
@@ -83,9 +83,9 @@
     }
     .copyright {
       padding-left: 0px;
-      a {
-        right: -8px;
-      }
+    }
+    .copyright__ha {
+      right: -8px;
     }
   }
   .contacts__item:nth-of-type(2) {
@@ -132,10 +132,10 @@
     .copyright {
       padding-left: 157px;
       padding-top: 38px;
-      a {
-        right: -160px;
-        top: 82px;
-      }
+    }
+    .copyright__ha {
+      right: -160px;
+      top: 82px;
     }
   }
   .page-footer__title {
@@ -155,7 +155,6 @@
       padding-bottom: 35px;
     }
   }
-
   .contacts__item {
     b {
       margin-bottom: 27px;
