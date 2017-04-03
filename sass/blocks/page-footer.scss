@@ -56,6 +56,7 @@
   .page-footer__wrapper {
     @include clearfix;
     display: block;
+    padding-bottom: 40px;
     .copyright {
       margin-left: 0;
       p {
@@ -141,7 +142,12 @@
   .page-footer__wrapper {
     padding-top: 3px;
     padding: 0 10px;
+    padding-bottom: 35px;
+    &--photo {
+      padding-bottom: 60px;
+    }
   }
+
   .contacts__item {
     b {
       margin-bottom: 27px;
