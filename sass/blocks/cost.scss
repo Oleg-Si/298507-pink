@@ -3,8 +3,8 @@
   min-height: 471px;
   svg {
     width: 100%;
-    height: auto;
-    margin-bottom: 59px;
+    height: 25px;
+    position: absolute;
   }
 }
 .cost__wrapper {
@@ -12,6 +12,7 @@
   overflow: hidden;
   margin: 0 auto;
   padding: 0 20px;
+  padding-top: 91px;
 }
 .cost__item {
   text-align: center;
@@ -82,12 +83,14 @@
     background-position: center -19px;
     svg {
       margin-bottom: 0px;
+      height: 52px;
     }
   }
   .cost__wrapper {
     @include container;
     width: auto;
-    padding-top: 27px;
+    padding-top: 89px;
+
   }
   .cost__price {
     min-height: 79px;
@@ -128,17 +131,17 @@
   .cost__toggles {
     display: none;
   }
-  .products__item:nth-child(n+2) {
-  display: block;
-  }
 }
 @media ($desktop-width) {
   .cost__wrapper {
     padding: 0 10px;
-    padding-top: 68px;
+    padding-top: 151px;
   }
   .cost {
     min-height: 525px;
+    svg {
+      height: 77px;
+    }
   }
   .cost__item {
     width: 235px;
