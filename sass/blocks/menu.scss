@@ -87,24 +87,22 @@
         &:last-child {
           margin-right: 0;
         }
-        a {
+        &--active a {
+          border-bottom: 2px solid #ffffff;
+          display: block;
+          height: 30px;
           &:hover {
-            color: #d22856;
-          }
-          &:active {
-            color: #ffffff;
-            opacity: 0.3;
+            border-bottom: 2px solid #d22854;
           }
         }
-        &--active {
-          a {
-            border-bottom: 2px solid #ffffff;
-            display: block;
-            height: 30px;
-            &:hover {
-              border-bottom: 2px solid #d22854;
-            }
+      }
+      .menu__link {
+        &:hover {
+            color: #d22856;
           }
+        &:active {
+          color: #ffffff;
+          opacity: 0.3;
         }
       }
       .menu__header {
