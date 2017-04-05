@@ -65,6 +65,18 @@
   }
 }
 @media ($desktop-width) {
+  .menu__item {
+    &--active {
+      a {
+        border-bottom: 2px solid #ffffff;
+        display: block;
+        height: 30px;
+        &:hover {
+          border-bottom: 2px solid #d22854;
+        }
+      }
+    }
+  }
   .menu {
     &--closed {
       .menu__list {
@@ -86,14 +98,6 @@
         margin-right: 76px;
         &:last-child {
           margin-right: 0;
-        }
-        &--active a {
-          border-bottom: 2px solid #ffffff;
-          display: block;
-          height: 30px;
-          &:hover {
-            border-bottom: 2px solid #d22854;
-          }
         }
       }
       .menu__link {
